@@ -6,10 +6,11 @@
   },
   "content": {
     "home": {
-      "description": "Welcome on my website"
+      "description": "Website under construction..."
     },
     "usmp": {
-      "body": "The Unknown SMP is a half-scripted half-survival private Minecraft server."
+      "body": "The Unknown SMP is a half-scripted half-survival private Minecraft server.",
+      "socials": "Find the Unknown SMP now!"
     }
   },
   "languages": {
