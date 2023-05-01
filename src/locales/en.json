@@ -1,0 +1,22 @@
+{
+  "motto": "Developer with an empty head",
+  "usmp": "Unknown SMP",
+  "pages": {
+    "home": "Home"
+  },
+  "content": {
+    "home": {
+      "description": "Welcome on my website"
+    },
+    "usmp": {
+      "body": "The Unknown SMP is a half-scripted half-survival private Minecraft server."
+    }
+  },
+  "languages": {
+    "fr": "French",
+    "en": "English"
+  },
+  "footer": {
+    "copyright": "© Copyright Lumaa 2022-[now]. All Rights Reserved"
+  }
+}
