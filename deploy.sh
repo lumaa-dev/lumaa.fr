@@ -7,6 +7,6 @@ npm run build
 git add -A
 git commit -m 'new deploy dude'
 
-git push
+git push origin main
 
 cd -
