@@ -2,7 +2,8 @@
   "motto": "Développeur avec la tête vide",
   "usmp": "Unknown SMP",
   "pages": {
-    "home": "Accueil"
+    "home": "Accueil",
+    "mods": "Mods"
   },
   "content": {
     "home": {
@@ -16,6 +17,10 @@
   "languages": {
     "fr": "Français",
     "en": "Anglais"
+  },
+  "stats": {
+    "downloads": "téléchargements",
+    "followers": "followers"
   },
   "footer": {
     "copyright": "© Copyright Lumaa 2022-[now]. Tous droits réservés"

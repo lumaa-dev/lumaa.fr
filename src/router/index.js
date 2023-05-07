@@ -18,6 +18,14 @@ const routes = [
       title: "Unknown SMP"
     },
     component: () => import('../views/UnknownSmpView.vue')
+  },
+  {
+    path: '/mods',
+    name: 'mods',
+    meta: {
+      title: "Lumaa - Mods"
+    },
+    component: () => import('../views/ModsView.vue')
   }
 ]
 
