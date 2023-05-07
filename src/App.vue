@@ -2,7 +2,7 @@
   export default {
     data() {
       return {
-        links: [{ url: "/", name: "pages.home" }, { url: "/unknownsmp", name: "usmp" }],
+        links: [{ url: "/", name: "pages.home" }, { url: "/unknownsmp", name: "usmp" }, { url: "/mods", name: "pages.mods" }],
         lang: "",
         langs: [{ id: "en", name: "languages.en" }, { id: "fr", name: "languages.fr" }]
       }
@@ -60,13 +60,35 @@ select {
   padding: 5vh;
 }
 
-/* --------------- */
-
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
+
+a[data-styled], button[data-styled] {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 20px;
+  gap: 10px;
+  width: fit-content;
+  height: fit-content;
+  position: relative;
+  background: rgba(30, 30, 30, 0.35);
+  border-radius: 20px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 3vh;
+  transition: 150ms all ease-out;
+}
+
+a[data-styled]:hover, button[data-styled]:hover {
+  background: rgba(30, 30, 30, 0.85);
+}
+
+/* --------------- */
 
 #app {
   font-family: var(--font);
