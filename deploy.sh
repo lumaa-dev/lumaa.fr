@@ -2,7 +2,9 @@
 set -e
 npm run build
 
+today=$(date +'%d/%m/%Y - %T')
+
 git add -A
-git commit -m 'New deploy'
+git commit -m "Deploy from ${today}"
 
 git push origin main
