@@ -12,6 +12,13 @@
     "usmp": {
       "body": "The Unknown SMP is a half-scripted half-survival private Minecraft server.",
       "socials": "Find the Unknown SMP now!"
+    },
+    "mods": {
+      "support": "Support Discord Server"
+    },
+    "redirect": {
+      "redirecting": "Redirecting...",
+      "back": "Go back"
     }
   },
   "languages": {
@@ -21,6 +28,10 @@
   "stats": {
     "downloads": "downloads",
     "followers": "followers"
+  },
+  "errors": {
+    "unknown_unsafe_link": "Redirection link is unknown or not safe.",
+    "failed_fetch_mods": "Mods couldn't be fetched."
   },
   "footer": {
     "copyright": "© Copyright Lumaa 2022-[now]. All Rights Reserved"

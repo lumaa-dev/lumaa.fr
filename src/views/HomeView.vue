@@ -4,7 +4,7 @@
     <p class="sub">{{ $t("motto") }}</p>
     <div class="sep"></div>
     <p>{{  $t("content.home.description") }}</p>
-    <a href="https://lumaa.brebond.com/" data-styled>Site actuel</a>
+    <router-link v-bind:to="'/redirect?url=https://lumaa.brebond.com/'" data-styled>Site actuel</router-link>
   </div>
 </template>
 

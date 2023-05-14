@@ -26,8 +26,25 @@ const routes = [
       title: "Lumaa - Mods"
     },
     component: () => import('../views/ModsView.vue')
+  },
+  {
+    path: '/redirect',
+    name: "redirect",
+    meta: {
+      title: "Redirecting..."
+    },
+    component: () => import('../views/RedirectView.vue')
   }
 ]
+
+const customRedirections = [
+  {
+    path: "/support",
+    redirect: "/redirect?url=https://discord.gg/Rqpn3C7yR5"
+  }
+]
+
+routes.push(...customRedirections)
 
 const router = createRouter({
   history: createWebHashHistory(),
