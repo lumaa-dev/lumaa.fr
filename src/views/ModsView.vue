@@ -3,7 +3,7 @@
         <h1>{{ $t("pages.mods") }}</h1>
     </div>
     <div class="mods">
-        <router-link class="x" data-styled :to="'/support'">Support Discord Server</router-link>
+        <router-link class="x" data-styled :to="'/support'">{{ $t("content.mods.support") }}</router-link>
         <ModPanelView v-for="(mod, index) in mods" :key="index" :mod="mod"></ModPanelView>
     </div>
 </template>

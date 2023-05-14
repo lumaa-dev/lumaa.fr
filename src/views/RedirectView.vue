@@ -1,7 +1,7 @@
 <template>
     <div>
-        <h1>Redirecting...</h1>
-        <button data-styled @click="this.goBack">Go back</button>
+        <h1>{{ $t("content.redirect.redirecting") }}</h1>
+        <button data-styled @click="this.goBack">{{ $t("content.redirect.back") }}</button>
     </div>
 </template>
 
