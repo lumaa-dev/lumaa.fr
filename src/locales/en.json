@@ -31,7 +31,7 @@
   },
   "errors": {
     "unknown_unsafe_link": "Redirection link is unknown or not safe.",
-    "failed_fetch_mods": "Mods couldn't be fetched."
+    "fail_fetch_mods": "Mods couldn't be fetched."
   },
   "footer": {
     "copyright": "© Copyright Lumaa 2022-[now]. All Rights Reserved"
