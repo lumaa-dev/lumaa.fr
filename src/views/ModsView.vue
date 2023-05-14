@@ -3,11 +3,16 @@
         <h1>{{ $t("pages.mods") }}</h1>
     </div>
     <div class="mods">
+        <router-link class="x" data-styled :to="'/support'">Support Discord Server</router-link>
         <ModPanelView v-for="(mod, index) in mods" :key="index" :mod="mod"></ModPanelView>
     </div>
 </template>
 
 <style scoped>
+.x {
+    margin: 5vh;
+}
+
 .mods {
     display: flex;
     flex-direction: column;
@@ -45,7 +50,10 @@ import ModPanelView from '@/components/ModPanelView.vue';
                     }
                 });
             })
-                .catch(error => console.log("error", error));
+                .catch(error => {
+                    console.log("error", error)
+                    this.$router.push("/?error=fail_fetch_mods")
+                });
         }
     },
     beforeMount() {
