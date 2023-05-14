@@ -42,6 +42,11 @@
 </template>
 
 <style>
+@font-face {
+  font-family: "Nunito";
+  src: url("./assets/Nunito-VariableFont_wght.ttf");
+}
+
 :root {
   --brand: #f8bd4a;
   --font: "Nunito", sans-serif;
@@ -67,6 +72,8 @@ select {
 }
 
 a[data-styled], button[data-styled] {
+  border: none;
+  font: var(--font);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -82,6 +89,7 @@ a[data-styled], button[data-styled] {
   text-decoration: none;
   font-size: 3vh;
   transition: 150ms all ease-out;
+  cursor: pointer;
 }
 
 a[data-styled]:hover, button[data-styled]:hover {
@@ -112,6 +120,7 @@ nav {
   position: fixed;
   width: 100vw;
   left: 0;
+  z-index: 999;
 }
 
 nav a {
