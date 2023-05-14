@@ -1,22 +1,29 @@
 <template>
-    <div class="main">
-            <img :src="mod.icon_url">
-            <div class="v">
-                <p class="title">{{ mod.title }}</p>
-                <p>{{ mod.downloads }} {{ $t("stats.downloads") }}</p>
-                <p>{{ mod.followers }} {{ $t("stats.followers") }}</p>
-            </div>
+    <router-link v-bind:to="'/redirect?url=https://modrinth.com/mod/' + mod.id">
+        <div class="main">
+                <img :src="mod.icon_url" draggable="false">
+                <div class="v">
+                    <p class="title">{{ mod.title }}</p>
+                    <p>{{ mod.downloads }} {{ $t("stats.downloads") }}</p>
+                    <p>{{ mod.followers }} {{ $t("stats.followers") }}</p>
+                </div>
         </div>
+    </router-link>
 </template>
 
 <style scoped>
+a {
+    color: #fff;
+    text-decoration: none !important;
+}
+
 .main {
     font-family: var(--font);
     box-sizing: border-box;
     background: #1E1E1E;
     border: 1px solid rgba(255, 255, 255, 0.35);
     border-radius: 25px;
-    width: 25vw;
+    width: 35vw;
     height: fit-content;
     display: flex;
     text-align: right;
@@ -24,6 +31,18 @@
     justify-content: space-between;
     padding: 10px;
     margin: 10px;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    transition: bottom 0.15s ease-out, background 0.15s ease-out;
+    z-index: 1;
+}
+
+.main:hover {
+    position: relative;
+    bottom: 10px;
+    left: 0;
+    background: #2e2e2e;
 }
 
 .main .v {
@@ -36,6 +55,7 @@
     border-radius: 25px;
     width: 150px;
     height: 150px;
+    background: #ffffff1a;
 }
 
 .main .title {
@@ -47,7 +67,7 @@
 <script>
     export default {
         props: {
-            mod: String
+            mod: Object
         }
     }
 </script>
