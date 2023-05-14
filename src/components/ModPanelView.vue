@@ -1,6 +1,6 @@
 <template>
-    <router-link v-bind:to="'/redirect?url=https://modrinth.com/mod/' + mod.id">
-        <div class="main">
+    <router-link v-bind:to="'/redirect?url=https://modrinth.com/mod/' + mod.id" tabindex="-1">
+        <div class="main" tabindex="0">
                 <img :src="mod.icon_url" draggable="false">
                 <div class="v">
                     <p class="title">{{ mod.title }}</p>
@@ -15,6 +15,7 @@
 a {
     color: #fff;
     text-decoration: none !important;
+    margin: 10px;
 }
 
 .main {
@@ -30,7 +31,6 @@ a {
     align-items: center;
     justify-content: space-between;
     padding: 10px;
-    margin: 10px;
     position: relative;
     bottom: 0;
     left: 0;
@@ -38,11 +38,16 @@ a {
     z-index: 1;
 }
 
-.main:hover {
+.main:hover, .main:focus-visible {
     position: relative;
     bottom: 10px;
     left: 0;
     background: #2e2e2e;
+    outline: none !important;
+}
+
+.main:focus-visible {
+    border: 1px solid rgba(255, 255, 255, 0.7) !important;
 }
 
 .main .v {

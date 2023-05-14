@@ -89,7 +89,7 @@ a[data-styled], button[data-styled] {
   color: #fff;
   text-decoration: none;
   font-size: 3vh;
-  transition: 150ms all ease-out;
+  transition: background 150ms ease-out;
   cursor: pointer;
 }
 
@@ -98,7 +98,8 @@ a[data-styled]:hover, button[data-styled]:hover, a[data-styled]:focus-visible, b
 }
 
 :focus-visible {
-  outline: var(--outline) auto 1px;
+  outline: none !important;
+  border: 1px solid var(--outline) !important;
 }
 /* --------------- */
 
