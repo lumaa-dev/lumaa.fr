@@ -51,6 +51,7 @@
   --brand: #f8bd4a;
   --font: "Nunito", sans-serif;
   --background: #353535;
+  --outline: rgba(255, 255, 255, 0.35);
 }
 
 select {
@@ -92,10 +93,13 @@ a[data-styled], button[data-styled] {
   cursor: pointer;
 }
 
-a[data-styled]:hover, button[data-styled]:hover {
+a[data-styled]:hover, button[data-styled]:hover, a[data-styled]:focus-visible, button[data-styled]:focus-visible {
   background: rgba(30, 30, 30, 0.85);
 }
 
+:focus-visible {
+  outline: var(--outline) auto 1px;
+}
 /* --------------- */
 
 #app {

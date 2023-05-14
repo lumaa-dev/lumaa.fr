@@ -21,7 +21,7 @@ a {
     font-family: var(--font);
     box-sizing: border-box;
     background: #1E1E1E;
-    border: 1px solid rgba(255, 255, 255, 0.35);
+    border: 1px solid var(--outline);
     border-radius: 25px;
     width: 35vw;
     height: fit-content;
