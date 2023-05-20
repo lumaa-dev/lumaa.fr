@@ -47,6 +47,7 @@ button {
         },
         beforeMount() {
             let url = this.getUrl()
+            if (url == undefined || url == "") this.goBack();
             url = this.addSpecialParam(url)
             if (!this.safeUrl(url) || url.length < 1) url = "/?error=unknown_unsafe_link";
 
