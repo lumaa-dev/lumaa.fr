@@ -1,6 +1,9 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import { nextTick } from "vue"
 import HomeView from '../views/HomeView.vue'
+import ModsView from '../views/ModsView.vue'
+import RedirectView from '../views/RedirectView.vue'
+import UnknownSmpView from '../views/UnknownSmpView.vue'
 
 const routes = [
   {
@@ -19,7 +22,7 @@ const routes = [
     meta: {
       title: "Unknown SMP"
     },
-    component: () => import('../views/UnknownSmpView.vue')
+    component: UnknownSmpView
   },
   {
     path: '/mods',
@@ -27,7 +30,7 @@ const routes = [
     meta: {
       title: "Lumaa - Mods"
     },
-    component: () => import('../views/ModsView.vue')
+    component: ModsView
   },
   {
     path: '/redirect',
@@ -35,7 +38,7 @@ const routes = [
     meta: {
       title: "Redirecting..."
     },
-    component: () => import('../views/RedirectView.vue')
+    component: RedirectView
   }
 ]
 
