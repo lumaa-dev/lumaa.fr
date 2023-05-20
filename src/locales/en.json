@@ -21,6 +21,11 @@
       "back": "Go back"
     }
   },
+  "components": {
+    "modal": {
+      "close": "Click to dismiss"
+    }
+  },
   "languages": {
     "fr": "French",
     "en": "English"
@@ -29,7 +34,7 @@
     "downloads": "downloads",
     "followers": "followers"
   },
-  "errors": {
+  "error": {
     "unknown_unsafe_link": "Redirection link is unknown or not safe.",
     "fail_fetch_mods": "Mods couldn't be fetched."
   },

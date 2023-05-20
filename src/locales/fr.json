@@ -21,6 +21,11 @@
       "back": "Retour arrière"
     }
   },
+  "components": {
+    "modal": {
+      "close": "Cliquez pour fermer"
+    }
+  },
   "languages": {
     "fr": "Français",
     "en": "Anglais"
@@ -29,7 +34,7 @@
     "downloads": "téléchargements",
     "followers": "followers"
   },
-  "errors": {
+  "error": {
     "unknown_unsafe_link": "Le lien de redirection est inconnu ou pas sécurisé.",
     "fail_fetch_mods": "Les mods n'ont pas pu être récupérés."
   },

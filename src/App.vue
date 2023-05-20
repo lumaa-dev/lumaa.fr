@@ -1,32 +1,36 @@
 <script>
+import ErrorModalView from './components/ErrorModalView.vue'
+
   export default {
     data() {
-      return {
-        links: [{ url: "/", name: "pages.home" }, { url: "/unknownsmp", name: "usmp" }, { url: "/mods", name: "pages.mods" }],
-        lang: "",
-        langs: [{ id: "en", name: "languages.en" }, { id: "fr", name: "languages.fr" }]
-      }
+        return {
+            links: [{ url: "/", name: "pages.home" }, { url: "/unknownsmp", name: "usmp" }, { url: "/mods", name: "pages.mods" }],
+            lang: "",
+            langs: [{ id: "en", name: "languages.en" }, { id: "fr", name: "languages.fr" }]
+        };
     },
     methods: {
-      changeLang(lang) {
-        this.lang = lang
-        this.$i18n.locale = lang
-        this.$store.commit("setLang", lang)
-        localStorage.setItem("lang", lang)
-      },
-      loadLang() {
-        let lang = localStorage.getItem("lang") || "en"
-        this.lang = lang
-        this.$i18n.locale = lang
-      }
+        changeLang(lang) {
+            this.lang = lang;
+            this.$i18n.locale = lang;
+            this.$store.commit("setLang", lang);
+            localStorage.setItem("lang", lang);
+        },
+        loadLang() {
+            let lang = localStorage.getItem("lang") || "en";
+            this.lang = lang;
+            this.$i18n.locale = lang;
+        }
     },
     beforeMount() {
-      this.loadLang()
-    }
-  }
+        this.loadLang();
+    },
+    components: { ErrorModalView }
+}
 </script>
 
 <template>
+  <ErrorModalView></ErrorModalView>
   <nav>
     <router-link v-for="(link, index) in links" :key="index" v-bind:to=link.url>{{ $t(link.name) }}</router-link>
   </nav>
@@ -125,7 +129,7 @@ nav {
   position: fixed;
   width: 100vw;
   left: 0;
-  z-index: 999;
+  z-index: 100;
 }
 
 nav a {
