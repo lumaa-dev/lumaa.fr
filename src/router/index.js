@@ -86,7 +86,6 @@ routes.push(...customRedirections)
 
 const router = createRouter({
   history: createWebHistory(),
-  base: "repo", // This is a ChatGPT line - aka. a test line
   routes
 })
 
