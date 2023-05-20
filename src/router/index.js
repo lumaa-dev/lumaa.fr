@@ -1,10 +1,11 @@
-import { createRouter, createWebHashHistory } from 'vue-router'
+import { createRouter, createWebHistory } from 'vue-router'
 import { nextTick } from "vue"
 import HomeView from '../views/HomeView.vue'
 
 const routes = [
   {
     path: '/',
+    alias: "/home",
     name: 'home',
     meta: {
       title: "Lumaa"
@@ -13,6 +14,7 @@ const routes = [
   },
   {
     path: '/unknownsmp',
+    alias: '/usmp',
     name: 'unknownsmp',
     meta: {
       title: "Unknown SMP"
@@ -37,17 +39,50 @@ const routes = [
   }
 ]
 
+const redirect = (url) => {
+  return "/redirect?url=" + url
+}
+
 const customRedirections = [
   {
     path: "/support",
-    redirect: "/redirect?url=https://discord.gg/Rqpn3C7yR5"
+    redirect: redirect("https://discord.gg/Rqpn3C7yR5")
+  },
+  {
+    path: "/community",
+    redirect: redirect("https://discord.gg/jQ2XcVbpbQ")
+  },
+  {
+    path: "/twitch",
+    redirect: redirect("https://twitch.tv/lumaa_dev")
+  },
+  {
+    path: "/youtube",
+    redirect: redirect("https://youtube.com/@lumaa_dev")
+  },
+  {
+    path: "/tiktok",
+    redirect: redirect("https://tiktok.com/@lumaa_dev")
+  },
+  {
+    path: "/instagram",
+    redirect: redirect("https://instagram.com/lumaa_dev")
+  },
+  {
+    path: "/github",
+    redirect: redirect("https://github.com/lumaa_dev")
+  },
+  {
+    path: "/v-fast",
+    alias: "/vfast",
+    redirect: redirect("https://github.com/v-fast")
   }
 ]
 
 routes.push(...customRedirections)
 
 const router = createRouter({
-  history: createWebHashHistory(),
+  history: createWebHistory(),
   routes
 })
 
