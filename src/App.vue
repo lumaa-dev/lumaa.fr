@@ -4,7 +4,7 @@ import ErrorModalView from './components/ErrorModalView.vue'
   export default {
     data() {
         return {
-            links: [{ url: "/", name: "pages.home" }, { url: "/unknownsmp", name: "usmp" }, { url: "/mods", name: "pages.mods" }],
+            links: [{ url: "/", name: "pages.home" }, { url: "/unknownsmp", name: "usmp" }, { url: "/mods", name: "pages.mods" }, { url: "/branding", name: "pages.branding" }],
             lang: "",
             langs: [{ id: "en", name: "languages.en" }, { id: "fr", name: "languages.fr" }]
         };
@@ -51,9 +51,16 @@ import ErrorModalView from './components/ErrorModalView.vue'
   src: url("./assets/Nunito-VariableFont_wght.ttf");
 }
 
+@font-face {
+  font-family: "VCR";
+  src: url("./assets/VCR_OSD_MONO.ttf");
+}
+
 :root {
   --brand: #f8bd4a;
+  --bkrm: #222fd5;
   --font: "Nunito", sans-serif;
+  --vcr: "VCR", monospace;
   --background: #353535;
   --outline: rgba(255, 255, 255, 0.35);
 }

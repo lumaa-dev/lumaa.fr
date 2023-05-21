@@ -4,6 +4,7 @@ import HomeView from '../views/HomeView.vue'
 import ModsView from '../views/ModsView.vue'
 import RedirectView from '../views/RedirectView.vue'
 import UnknownSmpView from '../views/UnknownSmpView.vue'
+import BrandView from '@/views/BrandView.vue'
 
 const routes = [
   {
@@ -31,6 +32,15 @@ const routes = [
       title: "Lumaa - Mods"
     },
     component: ModsView
+  },
+  {
+    path: '/brand',
+    alias: '/branding',
+    name: 'brand',
+    meta: {
+      title: "Lumaa - Brand"
+    },
+    component: BrandView
   },
   {
     path: '/redirect',

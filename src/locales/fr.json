@@ -3,7 +3,8 @@
   "usmp": "Unknown SMP",
   "pages": {
     "home": "Accueil",
-    "mods": "Mods"
+    "mods": "Mods",
+    "branding": "Marque"
   },
   "content": {
     "home": {
@@ -15,6 +16,13 @@
     },
     "mods": {
       "support": "Besoin d'aide ? Cliquez ici !"
+    },
+    "branding": {
+      "subtitle": "Tout une marque",
+      "sections": {
+        "colorsFonts": "Couleurs & Polices",
+        "soon": "Bientôt..."
+      }
     },
     "redirect": {
       "redirecting": "Redirection...",
