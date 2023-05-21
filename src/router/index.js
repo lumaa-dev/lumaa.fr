@@ -83,7 +83,7 @@ const customRedirections = [
   },
   {
     path: "/github",
-    redirect: redirect("https://github.com/lumaa_dev")
+    redirect: redirect("https://github.com/lumaa-dev")
   },
   {
     path: "/v-fast",
