@@ -1,7 +1,7 @@
 <template>
     <div>
         <h1>{{ $t("content.redirect.redirecting") }}</h1>
-        <button data-styled @click="this.goBack">{{ $t("content.redirect.back") }}</button>
+        <button data-styled @click="this.goBack" v-if="this.lastRoute != ''">{{ $t("content.redirect.back") }}</button>
     </div>
 </template>
 
@@ -11,7 +11,7 @@ div {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: calc(100vh - 31.4vh);
+    height: calc(100vh - 81.5px);
 }
 
 button {
@@ -23,12 +23,13 @@ button {
     export default {
         data() {
             return {
-                timeout: null
+                timeout: null,
+                lastRoute: ""
             }
         },
         methods: {
             getUrl() {
-                return this.$route.query.url;
+                return this.$route.query.url == undefined ? "" : this.$route.query.url;
             },
             safeUrl(url) {
                 return url.startsWith("https");
@@ -41,19 +42,26 @@ button {
                 }
             },
             goBack() {
-                this.$router.back();
+                this.$router.push(this.lastRoute)
                 clearTimeout(this.$data.timeout);
             }
         },
         beforeMount() {
             let url = this.getUrl()
-            if (url == undefined || url == "") this.goBack();
+            console.log(url)
+            if (url.length < 1 || url == null) this.goBack();
             url = this.addSpecialParam(url)
-            if (!this.safeUrl(url) || url.length < 1) url = "/?error=unknown_unsafe_link";
+            if (!this.safeUrl(url) || url.length < 1) url = "/#/?error=unknown_unsafe_link";
 
             this.$data.timeout = setTimeout(() => {
                 window.location.href = url
-            }, 3*1000);
+                window.location.reload()
+            }, 1.5*1000);
+        },
+        beforeRouteEnter(to, from, next) {
+            next(vm => {
+                vm.lastRoute = from.path;
+            })
         }
     }
 </script>

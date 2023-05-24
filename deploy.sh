@@ -8,3 +8,4 @@ git add -A
 git commit -m "Deploy from ${today}"
 
 git push origin main
+exit

@@ -19,12 +19,13 @@
 
 <style scoped>
 h1 {
-  font-size: 3.5vw;
+  font-size: 3.5em;
 }
 
 .home {
   display: flex;
   flex-direction: column;
   align-items: center;
+  flex-wrap: wrap;
 }
 </style>

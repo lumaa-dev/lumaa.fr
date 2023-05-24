@@ -5,7 +5,7 @@
   <div class="centerize">
     <p class="sep body">{{ $t("content.usmp.body") }}</p>
   </div>
-  <h1>{{ $t("content.usmp.socials") }}</h1>
+  <h2>{{ $t("content.usmp.socials") }}</h2>
   <div class="links">
     <a href="https://youtube.com/@unknownsmp">YouTube</a>
     <a href="https://instagram.com/unknown_smp_">Instagram</a>
@@ -24,8 +24,8 @@
 
 .unknownsmp img {
   border-radius: 50%;
-  width: 10vw;
-  height: 10vw;
+  width: 10em;
+  height: 10em;
 }
 
 .centerize {
@@ -39,7 +39,17 @@
   width: 70vw;
 }
 
-h1 {
-  font-size: 1.5vw;
+/* --- MOBILE --- */
+
+@media screen and (max-width: 850px) {
+  .body {
+    width: 95vw;
+    padding: 2.5em;
+  }
+
+  .unknownsmp img {
+    width: 7em;
+    height: 7em;
+  }
 }
 </style>

@@ -112,14 +112,16 @@ a[data-styled]:hover, button[data-styled]:hover, a[data-styled]:focus-visible, b
 
 .links {
   display: flex;
-  height: 10em;
+  height: fit-content;
+  width: 100vw;
   justify-content: center;
   padding: 0.75em;
+  flex-wrap: wrap;
 }
 
-.links > a {
+.links a {
   padding: 0.5em 1em;
-  margin: 0 1em 0 1em;
+  margin: 2vh 1em 2vh 1em;
   border-radius: 10px;
   background: rgba(130, 130, 130, 0.35);
   height: fit-content;
@@ -150,6 +152,7 @@ a[data-styled]:hover, button[data-styled]:hover, a[data-styled]:focus-visible, b
   transform: scale(1.2);
   outline: var(--outline) solid 1px;
 }
+
 /* --------------- */
 
 #app {
@@ -167,12 +170,13 @@ body {
 nav {
   padding: 30px;
   margin: 10px;
+  height: 81.5px;
   display: flex;
   justify-content: left;
   background: rgba(0, 0, 0, 0.3);
   border-radius: 20px;
   position: fixed;
-  width: 100vw;
+  width: calc(100vw - 20px);
   left: 0;
   z-index: 100;
 }
@@ -202,7 +206,34 @@ nav a.router-link-exact-active {
   margin-top: 5vh;
 }
 
+.footer > p {
+  text-align: right;
+  font-size: 0.8em;
+}
+
 .footer select {
   color: #ffffff4d;
+}
+
+/* --- MOBILE --- */
+
+@media screen and (max-width: 850px) {
+  .links {
+    flex-direction: column;
+  }
+
+  nav {
+    position: initial;
+    font-size: 0.75em;
+    justify-content: space-around;
+  }
+
+  .content {
+    padding-top: 0;
+  }
+
+  .sep {
+    padding: 0;
+  }
 }
 </style>

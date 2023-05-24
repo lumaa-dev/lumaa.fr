@@ -33,7 +33,7 @@
   },
   "components": {
     "modal": {
-      "close": "Cliquez pour fermer"
+      "close": "Cliquez ou tapez pour fermer"
     }
   },
   "languages": {

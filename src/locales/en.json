@@ -33,7 +33,7 @@
   },
   "components": {
     "modal": {
-      "close": "Click to dismiss"
+      "close": "Click or tap to dismiss"
     }
   },
   "languages": {

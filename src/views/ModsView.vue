@@ -52,7 +52,8 @@ import ModPanelView from '@/components/ModPanelView.vue';
             })
                 .catch(error => {
                     console.log("error", error)
-                    this.$router.push("/?error=fail_fetch_mods")
+                    this.$router.push("/#/?error=fail_fetch_mods")
+                    window.location.reload()
                 });
         }
     },

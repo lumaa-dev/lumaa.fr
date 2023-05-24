@@ -33,16 +33,16 @@
 
 .middle h1 {
     color: var(--brand);
-    font-size: 5vw;
+    font-size: 5em;
 }
 
 .middle p {
-    font-size: 1.5vw;
+    font-size: 1.5em;
 }
 
 .section h2 {
     margin-top: 5vh;
-    font-size: 3.5vw;
+    font-size: 2em;
     font-weight: 700;
 }
 
@@ -54,8 +54,8 @@
 }
 
 .color {
-    width: 20vh;
-    height: 20vh;
+    width: 10em;
+    height: 10em;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -65,7 +65,7 @@
 }
 
 .color p {
-    font-size: 1.5vw;
+    font-size: 1.5em;
     font-weight: 800;
 }
 

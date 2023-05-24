@@ -67,6 +67,18 @@ a {
     font-weight: 800;
     font-size: 3vh;
 }
+
+@media screen and (max-width: 850px) {
+    .main {
+        width: 90vw;
+    }
+
+    .main img {
+        width: 5em;
+        height: 5em;
+        border-radius: 15px;
+    }
+}
 </style>
 
 <script>

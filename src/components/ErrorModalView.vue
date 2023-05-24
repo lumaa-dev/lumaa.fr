@@ -24,6 +24,7 @@
 .modal > .content {
   background: var(--background);
   padding: 5vh;
+  max-width: 40vh;
   border-radius: 15px;
   pointer-events: none;
   transform: scale(1);
