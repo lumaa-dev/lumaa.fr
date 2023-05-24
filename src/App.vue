@@ -63,6 +63,7 @@ import ErrorModalView from './components/ErrorModalView.vue'
   --vcr: "VCR", monospace;
   --background: #353535;
   --outline: rgba(255, 255, 255, 0.35);
+  --btn-transition: background 150ms ease-out;
 }
 
 select {
@@ -100,17 +101,54 @@ a[data-styled], button[data-styled] {
   color: #fff;
   text-decoration: none;
   font-size: 3vh;
-  transition: background 150ms ease-out;
+  transition: var(--btn-transition);
   cursor: pointer;
 }
 
 a[data-styled]:hover, button[data-styled]:hover, a[data-styled]:focus-visible, button[data-styled]:focus-visible {
   background: rgba(30, 30, 30, 0.85);
+  outline: none !important;
+}
+
+.links {
+  display: flex;
+  height: 10em;
+  justify-content: center;
+  padding: 0.75em;
+}
+
+.links > a {
+  padding: 0.5em 1em;
+  margin: 0 1em 0 1em;
+  border-radius: 10px;
+  background: rgba(130, 130, 130, 0.35);
+  height: fit-content;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2em;
+  font-weight: 700;
+  transition: var(--btn-transition);
+}
+
+.links a:hover, .links a:focus-visible {
+  background: rgba(130, 130, 130, 0.7);
+  outline: none;
+}
+
+.links[data-titled] {
+  flex-direction: column;
+  justify-content: initial;
+}
+
+.links[data-titled] > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 :focus-visible {
-  outline: none !important;
-  border: 1px solid var(--outline) !important;
+  transform: scale(1.2);
+  outline: var(--outline) solid 1px;
 }
 /* --------------- */
 
