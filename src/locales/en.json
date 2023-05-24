@@ -8,7 +8,9 @@
   },
   "content": {
     "home": {
-      "description": "Website under construction..."
+      "socials": "Find Lumaa on the internet here:",
+      "community": "Community Discord",
+      "support": "Mod Support"
     },
     "usmp": {
       "body": "The Unknown SMP is a private Minecraft server half-scripted half-survival, created by Lumaa and Patate Givrée. The Unknown SMP is entirely running in The Backrooms, mod also by Lumaa (V-Fast).",
