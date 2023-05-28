@@ -89,6 +89,10 @@ const customRedirections = [
     path: "/v-fast",
     alias: "/vfast",
     redirect: redirect("https://github.com/v-fast")
+  },
+  {
+    path: "/modrinth",
+    redirect: redirect("https://modrinth.com/user/Lumaa")
   }
 ]
 
