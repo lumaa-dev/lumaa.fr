@@ -55,7 +55,6 @@ button {
 
             this.$data.timeout = setTimeout(() => {
                 window.location.href = url
-                window.location.reload()
             }, 1.5*1000);
         },
         beforeRouteEnter(to, from, next) {
