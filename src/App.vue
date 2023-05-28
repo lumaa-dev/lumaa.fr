@@ -1,5 +1,5 @@
 <script>
-import ErrorModalView from './components/ErrorModalView.vue'
+import ErrorModalView from '@/components/ErrorModalView.vue'
 
   export default {
     data() {
@@ -57,12 +57,15 @@ import ErrorModalView from './components/ErrorModalView.vue'
 }
 
 :root {
+  --background: #353535;
+  --outline: #ffffff59;
   --brand: #f8bd4a;
   --bkrm: #222fd5;
+  --warn: #ffcc00;
+
   --font: "Nunito", sans-serif;
   --vcr: "VCR", monospace;
-  --background: #353535;
-  --outline: rgba(255, 255, 255, 0.35);
+
   --btn-transition: background 150ms ease-out;
 }
 
