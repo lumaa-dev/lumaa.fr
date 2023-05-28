@@ -1,4 +1,5 @@
 <template>
+  <WarningHeroView warning="Testing website"></WarningHeroView>
   <div class="home">
     <h1>Lumaa</h1>
     <p class="sub">{{ $t("motto") }}</p>
@@ -16,6 +17,14 @@
     </div>
   </div>
 </template>
+
+<script>
+import WarningHeroView from '@/components/WarningHeroView.vue';
+
+export default {
+  components: { WarningHeroView }
+}
+</script>
 
 <style scoped>
 h1 {
