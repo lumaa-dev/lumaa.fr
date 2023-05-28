@@ -23,7 +23,7 @@
 <script>
 import ModPanelView from '@/components/ModPanelView.vue';
 
-    export default {
+export default {
     data() {
         return {
             mods: []
