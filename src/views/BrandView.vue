@@ -11,8 +11,13 @@
                 <p>Nunito</p>
             </div>
             <div class="color bkrm">
+                <p>{{ $t("usmp") }}</p>
                 <p>#222fd5</p>
                 <p>VCR Mono</p>
+            </div>
+            <div class="color warn">
+                <p>Warn</p>
+                <p>#ffcc00</p>
             </div>
         </div>
     </div>
@@ -81,5 +86,9 @@
 
 .color.bkrm p {
     font-family: var(--vcr);
+}
+
+.color.warn {
+    background: var(--warn);
 }
 </style>
