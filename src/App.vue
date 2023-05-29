@@ -72,6 +72,13 @@ import ErrorModalView from '@/components/ErrorModalView.vue'
 p, pre {
   font-size: 1.3em;
   font-family: var(--font);
+  max-width: 100vw;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+p.apd, pre.apd {
+  padding: 1em;
 }
 
 select {

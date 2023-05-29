@@ -4,7 +4,7 @@
     <h1>Lumaa</h1>
     <p class="sub">{{ $t("motto") }}</p>
     <div class="sep"></div>
-    <pre>{{ $t("content.home.description") }}</pre>
+    <pre class="apd">{{ $t("content.home.description") }}</pre>
     <div class="sep"></div>
     <h2>{{ $t("content.home.socials") }}</h2>
     <div class="links">
