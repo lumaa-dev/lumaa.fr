@@ -26,6 +26,19 @@
     </div>
 </template>
 
+<script>
+export default {
+    head: {
+      meta: [
+        { name: "og:title", content: "Développeur avec la tête vide.\nSee all the colors, fonts and images" },
+        { name: "og:type", content: "website" },
+        { name: "og:image", content: "https://brebond.com/lumaa/assets/pfp.png" },
+        { name: "og:url", content: "https://lumaa-dev.github.io/#/home" }
+    ]
+  },
+}
+</script>
+
 <style scoped>
 .middle {
     width: 100vw;

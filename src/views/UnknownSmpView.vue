@@ -15,6 +15,19 @@
   </div>
 </template>
 
+<script>
+export default {
+  head: {
+      meta: [
+        { name: "og:title", content: "The Unknown SMP is a private Minecraft server half-scripted half-survival, created by Lumaa and Patate Givrée." },
+        { name: "og:type", content: "website" },
+        { name: "og:image", content: "https://brebond.com/lumaa/assets/unknown.png" },
+        { name: "og:url", content: "https://lumaa-dev.github.io/#/unknownsmp" }
+    ]
+  }
+}
+</script>
+
 <style scoped>
 .unknownsmp {
   background: url(../assets/usmp_bg.png);

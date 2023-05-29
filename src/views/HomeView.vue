@@ -32,6 +32,14 @@ export default {
   beforeMount() {
     this.$data.link = window.location.href;
   },
+  head: {
+      meta: [
+        { name: "og:title", content: "Développeur avec la tête vide.\nLearn more about Lumaa" },
+        { name: "og:type", content: "website" },
+        { name: "og:image", content: "https://brebond.com/lumaa/assets/pfp.png" },
+        { name: "og:url", content: "https://lumaa-dev.github.io/#/home" }
+    ]
+  },
   components: { WarningHeroView }
 }
 </script>
