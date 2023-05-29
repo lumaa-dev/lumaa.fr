@@ -1,8 +1,10 @@
 <template>
-  <WarningHeroView warning="Testing website"></WarningHeroView>
+  <WarningHeroView warning="Testing website" v-if="link.includes('lumaa-dev.github.io') || link.includes('localhost')"></WarningHeroView>
   <div class="home">
     <h1>Lumaa</h1>
     <p class="sub">{{ $t("motto") }}</p>
+    <div class="sep"></div>
+    <p>{{ $t("content.home.description") }}</p>
     <div class="sep"></div>
     <h2>{{ $t("content.home.socials") }}</h2>
     <div class="links">
@@ -22,6 +24,15 @@
 import WarningHeroView from '@/components/WarningHeroView.vue';
 
 export default {
+  data() {
+    return {
+      link: null
+    }
+  },
+  beforeMount() {
+    this.$data.link = window.location.href;
+    console.log(this.$data.link)
+  },
   components: { WarningHeroView }
 }
 </script>
