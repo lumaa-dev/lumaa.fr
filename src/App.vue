@@ -71,6 +71,7 @@ import ErrorModalView from '@/components/ErrorModalView.vue'
 
 p, pre {
   font-size: 1.3em;
+  font-family: var(--font);
 }
 
 select {
