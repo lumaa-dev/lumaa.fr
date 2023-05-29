@@ -31,7 +31,6 @@ export default {
   },
   beforeMount() {
     this.$data.link = window.location.href;
-    console.log(this.$data.link)
   },
   components: { WarningHeroView }
 }
