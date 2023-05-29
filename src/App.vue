@@ -69,7 +69,7 @@ import ErrorModalView from '@/components/ErrorModalView.vue'
   --btn-transition: background 150ms ease-out;
 }
 
-p {
+p, pre {
   font-size: 1.3em;
 }
 
