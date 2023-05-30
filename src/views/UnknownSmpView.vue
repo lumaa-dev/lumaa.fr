@@ -1,6 +1,6 @@
 <template>
   <div class="unknownsmp">
-    <img src="https://brebond.com/lumaa/assets/unknown.png">
+    <img src="../assets/unknownsmp.png">
   </div>
   <div class="centerize">
     <p class="sep body">{{ $t("content.usmp.body") }}</p>
