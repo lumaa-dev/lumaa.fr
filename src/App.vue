@@ -17,10 +17,16 @@ import ErrorModalView from '@/components/ErrorModalView.vue'
             localStorage.setItem("lang", lang);
         },
         loadLang() {
-            let lang = localStorage.getItem("lang") || "en";
+            let lang = this.urlLang() || localStorage.getItem("lang") || "en";
+            console.log(lang)
             this.lang = lang;
             this.$i18n.locale = lang;
-        }
+        },
+        urlLang() {
+            let l = this.$route.query.lang == undefined ? "" : this.$route.query.lang;
+            console.log(this.$route.query.lang)
+            return l == "fr" || l == "en" ? l : "";
+        },
     },
     beforeMount() {
         this.loadLang();
