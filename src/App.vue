@@ -93,6 +93,8 @@ select {
   border: none;
   font-family: var(--font);
   font-size: 16px;
+  appearance: unset !important;
+  cursor: pointer;
 }
 
 .sep {
