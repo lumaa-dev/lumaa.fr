@@ -12,7 +12,10 @@
     <a href="https://tiktok.com/@_unknownsmp_">TikTok</a>
     <a href="https://soundcloud.com/unknownsmp">SoundCloud</a>
     <a href="https://modrinth.com/modpack/unknownsmp">Modpack</a>
+    <a href="https://teaser.lumaa.fr/">Teaser</a>
   </div>
+  <h2>Teaser</h2>
+  <iframe src="https://teaser.lumaa.fr/"></iframe>
 </template>
 
 <script>
@@ -50,6 +53,12 @@ export default {
 
 .body {
   width: 70vw;
+}
+
+iframe {
+  border: none !important;
+  outline: none !important;
+  pointer-events: none !important;
 }
 
 /* --- MOBILE --- */
