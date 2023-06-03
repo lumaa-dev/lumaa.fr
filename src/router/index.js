@@ -1,11 +1,16 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import { nextTick } from "vue"
 import HomeView from '../views/HomeView.vue'
+import UnknownSmpView from '@/views/UnknownSmpView.vue';
+import BrandView from '@/views/BrandView.vue';
+import ModsView from '@/views/ModsView.vue';
+import RedirectView from '@/views/RedirectView.vue';
+
+const val = true;
 
 const routes = [
   {
     path: '/',
-    alias: "/home",
     name: 'home',
     meta: {
       title: "Lumaa"
@@ -14,12 +19,11 @@ const routes = [
   },
   {
     path: '/unknownsmp',
-    alias: '/usmp',
     name: 'unknownsmp',
     meta: {
       title: "Unknown SMP"
     },
-    component: import("@/views/UnknownSmpView.vue")
+    component: val ? import("../views/UnknownSmpView.vue") : UnknownSmpView
   },
   {
     path: '/mods',
@@ -27,16 +31,12 @@ const routes = [
     meta: {
       title: "Lumaa - Mods"
     },
-    component: import("@/views/ModsView.vue")
+    component: val ? import("../views/ModsView.vue") : ModsView
   },
   {
-    path: '/brand',
-    alias: '/branding',
+    path: '/branding',
     name: 'brand',
-    meta: {
-      title: "Lumaa - Brand"
-    },
-    component: import("@/views/BrandView.vue")
+    component: val ? import("../views/BrandView.vue") : BrandView
   },
   {
     path: '/redirect',
@@ -44,7 +44,7 @@ const routes = [
     meta: {
       title: "Redirecting..."
     },
-    component: import("@/views/RedirectView.vue")
+    component: val ? import("../views/RedirectView.vue") : RedirectView
   }
 ]
 
