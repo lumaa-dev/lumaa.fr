@@ -23,7 +23,7 @@ const routes = [
     meta: {
       title: "Unknown SMP"
     },
-    component: UnknownSmpView
+    component: import("@/views/UnknownSmpView.vue")
   },
   {
     path: '/mods',
@@ -31,7 +31,7 @@ const routes = [
     meta: {
       title: "Lumaa - Mods"
     },
-    component: ModsView
+    component: import("@/views/ModsView.vue")
   },
   {
     path: '/brand',
@@ -40,7 +40,7 @@ const routes = [
     meta: {
       title: "Lumaa - Brand"
     },
-    component: BrandView
+    component: import("@/views/BrandView.vue")
   },
   {
     path: '/redirect',
@@ -48,7 +48,7 @@ const routes = [
     meta: {
       title: "Redirecting..."
     },
-    component: RedirectView
+    component: import("@/views/RedirectView.vue")
   }
 ]
 
