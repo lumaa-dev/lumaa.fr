@@ -1,10 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import { nextTick } from "vue"
 import HomeView from '../views/HomeView.vue'
-import ModsView from '../views/ModsView.vue'
-import RedirectView from '../views/RedirectView.vue'
-import UnknownSmpView from '../views/UnknownSmpView.vue'
-import BrandView from '@/views/BrandView.vue'
 
 const routes = [
   {
