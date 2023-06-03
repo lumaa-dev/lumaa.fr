@@ -6,7 +6,7 @@ import BrandView from '@/views/BrandView.vue';
 import ModsView from '@/views/ModsView.vue';
 import RedirectView from '@/views/RedirectView.vue';
 
-const val = true;
+const val = false;
 
 const routes = [
   {
