@@ -12,6 +12,7 @@
     <a href="https://tiktok.com/@_unknownsmp_">TikTok</a>
     <a href="https://soundcloud.com/unknownsmp">SoundCloud</a>
     <a href="https://modrinth.com/modpack/unknownsmp">Modpack</a>
+    <a href="mailto:unknownsmp@lumaa.fr">unknownsmp@lumaa.fr</a>
     <a href="https://teaser.lumaa.fr/">Teaser</a>
   </div>
   <h2>Teaser</h2>
@@ -24,8 +25,7 @@ export default {
       meta: [
         { name: "og:title", content: "The Unknown SMP is a private Minecraft server half-scripted half-survival, created by Lumaa and Patate Givrée." },
         { name: "og:type", content: "website" },
-        { name: "og:image", content: "https://brebond.com/lumaa/assets/unknown.png" },
-        { name: "og:url", content: "https://lumaa-dev.github.io/#/unknownsmp" }
+        { name: "og:url", content: "https://lumaa.fr/unknownsmp" }
     ]
   }
 }

@@ -64,8 +64,7 @@ export default {
       meta: [
         { name: "og:title", content: "Look at all the mods published on Modrinth made by Lumaa" },
         { name: "og:type", content: "website" },
-        { name: "og:image", content: "https://brebond.com/lumaa/assets/pfp.png" },
-        { name: "og:url", content: "https://lumaa-dev.github.io/#/mods" }
+        { name: "og:url", content: "https://lumaa.fr/mods" }
     ]
   },
     components: { ModPanelView }
