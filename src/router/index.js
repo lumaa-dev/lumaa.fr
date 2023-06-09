@@ -6,8 +6,6 @@ import BrandView from '@/views/BrandView.vue';
 import ModsView from '@/views/ModsView.vue';
 import RedirectView from '@/views/RedirectView.vue';
 
-const val = false;
-
 const routes = [
   {
     path: '/',
@@ -23,7 +21,7 @@ const routes = [
     meta: {
       title: "Unknown SMP"
     },
-    component: val ? import("../views/UnknownSmpView.vue") : UnknownSmpView
+    component: UnknownSmpView
   },
   {
     path: '/mods',
@@ -31,12 +29,12 @@ const routes = [
     meta: {
       title: "Lumaa - Mods"
     },
-    component: val ? import("../views/ModsView.vue") : ModsView
+    component: ModsView
   },
   {
     path: '/branding',
     name: 'brand',
-    component: val ? import("../views/BrandView.vue") : BrandView
+    component: BrandView
   },
   {
     path: '/redirect',
@@ -44,7 +42,7 @@ const routes = [
     meta: {
       title: "Redirecting..."
     },
-    component: val ? import("../views/RedirectView.vue") : RedirectView
+    component: RedirectView
   }
 ]
 
