@@ -1,5 +1,5 @@
 <template>
-  <WarningHeroView warning="Testing website" v-if="link.includes('lumaa-dev.github.io') || link.includes('localhost')"></WarningHeroView>
+  <WarningHeroView warning="Testing website" v-if="link.includes('dev.lumaa.fr') || link.includes('localhost')"></WarningHeroView>
   <div class="home">
     <h1>Lumaa</h1>
     <p class="sub">{{ $t("motto") }}</p>
@@ -14,6 +14,7 @@
       <a href="https://tiktok.com/@lumaa_dev">TikTok</a>
       <a href="https://github.com/lumaa-dev">GitHub</a>
       <a href="https://modrinth.com/user/Lumaa">Modrinth</a>
+      <a href="mailto:lumaa@lumaa.fr">lumaa@lumaa.fr</a>
       <router-link to="/support">{{ $t("content.home.support") }}</router-link>
       <router-link to="/community">{{ $t("content.home.community") }}</router-link>
     </div>
@@ -36,8 +37,7 @@ export default {
       meta: [
         { name: "og:title", content: "Développeur avec la tête vide.\nLearn more about Lumaa" },
         { name: "og:type", content: "website" },
-        { name: "og:image", content: "https://brebond.com/lumaa/assets/pfp.png" },
-        { name: "og:url", content: "https://lumaa-dev.github.io/#/home" }
+        { name: "og:url", content: "https://lumaa.fr/" }
     ]
   },
   components: { WarningHeroView }
