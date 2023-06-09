@@ -5,6 +5,7 @@ import UnknownSmpView from '@/views/UnknownSmpView.vue';
 import BrandView from '@/views/BrandView.vue';
 import ModsView from '@/views/ModsView.vue';
 import RedirectView from '@/views/RedirectView.vue';
+import NotFoundView from '@/components/NotFound.vue'
 
 const routes = [
   {
@@ -43,6 +44,14 @@ const routes = [
       title: "Redirecting..."
     },
     component: RedirectView
+  },
+  {
+    path: '/:pathMatch(.*)',
+    name: "404",
+    meta: {
+      title: "Lumaa - 404"
+    },
+    component: NotFoundView
   }
 ]
 
@@ -87,6 +96,10 @@ const customRedirections = [
   {
     path: "/modrinth",
     redirect: redirect("https://modrinth.com/user/Lumaa")
+  },
+  {
+    path: "/email",
+    redirect: redirect("mailto:lumaa@lumaa.fr")
   }
 ]
 

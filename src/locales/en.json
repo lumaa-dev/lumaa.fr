@@ -46,6 +46,11 @@
     "followers": "followers"
   },
   "error": {
+    "notfound": {
+      "title": "Error 404",
+      "subtitle": "It looks like you lost yourself",
+      "button": "Go home"
+    },
     "unknown_unsafe_link": "Redirection link is unknown or not safe.",
     "fail_fetch_mods": "Mods couldn't be fetched."
   },
