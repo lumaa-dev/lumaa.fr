@@ -51,7 +51,7 @@ button {
             console.log(url)
             if (url.length < 1 || url == null) this.goBack();
             url = this.addSpecialParam(url)
-            if (!this.safeUrl(url) || url.length < 1) url = "/#/?error=unknown_unsafe_link";
+            if (!this.safeUrl(url) || url.length < 1) url = "/?error=unknown_unsafe_link";
 
             this.$data.timeout = setTimeout(() => {
                 window.location.href = url
