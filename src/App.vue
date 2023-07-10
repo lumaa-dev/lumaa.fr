@@ -251,6 +251,18 @@ nav a.router-link-exact-active {
     justify-content: space-around;
   }
 
+  .footer {
+    flex-direction: column-reverse;
+  }
+
+  .footer > p {
+    text-align: center;
+  }
+
+  .footer select {
+    text-align-last: center;
+  }
+
   .content {
     padding-top: 0;
   }
