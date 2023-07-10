@@ -1,6 +1,6 @@
 <template>
   <div class="unknownsmp">
-    <img src="../assets/unknownsmp.png">
+    <img src="../assets/usmp_blue.png">
   </div>
   <div class="centerize">
     <p class="sep body">{{ $t("content.usmp.body") }}</p>
@@ -12,7 +12,7 @@
     <a href="https://tiktok.com/@_unknownsmp_">TikTok</a>
     <a href="https://soundcloud.com/unknownsmp">SoundCloud</a>
     <a href="https://modrinth.com/modpack/unknownsmp">Modpack</a>
-    <a href="mailto:unknownsmp@lumaa.fr">unknownsmp@lumaa.fr</a>
+    <a href="/branding#usmp">Logo</a>
     <a href="https://teaser.lumaa.fr/">Teaser</a>
   </div>
   <h2>Teaser</h2>
