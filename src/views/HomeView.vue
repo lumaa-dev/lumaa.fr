@@ -1,5 +1,5 @@
 <template>
-  <WarningHeroView warning="Testing website" v-if="link.includes('dev.lumaa.fr') || link.includes('localhost')"></WarningHeroView>
+  <WarningHeroView warning="Testing website" v-if="link.includes('localhost')"></WarningHeroView>
   <div class="home">
     <h1>Lumaa</h1>
     <p class="sub">{{ $t("motto") }}</p>
@@ -17,6 +17,14 @@
       <a href="mailto:lumaa@lumaa.fr">lumaa@lumaa.fr</a>
       <router-link to="/support">{{ $t("content.home.support") }}</router-link>
       <router-link to="/community">{{ $t("content.home.community") }}</router-link>
+    </div>
+    <div class="projects">
+      <p>Here are my best projects I've ever made!</p>
+      <!-- backrooms mod -->
+      <!-- usmp -->
+      <!-- act -->
+      <!-- utils -->
+      <!-- text-over -->
     </div>
   </div>
 </template>
