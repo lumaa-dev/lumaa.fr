@@ -8,7 +8,7 @@
   },
   "content": {
     "home": {
-      "description": "I am a young independent French developer. I do Minecraft mods, Discord bots, and content creation\n\nMy Backrooms mod being the most popular one with more than 1k downloads in less than a year.",
+      "description": "I am a independent French developer. I do Minecraft mods, Discord bots, and content creation\n\nMy Backrooms mod being the most popular one with about 2k downloads in a year.",
       "socials": "Find Lumaa on the internet here:",
       "community": "Community Discord",
       "support": "Mod Support"
@@ -24,7 +24,7 @@
       "subtitle": "A whole branding",
       "sections": {
         "colorsFonts": "Colors & Fonts",
-        "soon": "Logos & Icons soon..."
+        "logosIcons": "Logos & Icons"
       }
     },
     "redirect": {
