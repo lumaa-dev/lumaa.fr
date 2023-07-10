@@ -6,7 +6,7 @@
             <p>{{ warning }}</p>
             <p>{{ warning }}</p>
         </div>
-        <div class="scroller">
+        <div class="scroller two">
             <p>{{ warning }}</p>
             <p>{{ warning }}</p>
             <p>{{ warning }}</p>
@@ -56,7 +56,26 @@
 
 @media screen and (max-width: 850px) {
     .scroller p {
-        font-size: 5vw;
+        overflow: visible;
+        font-size: 3vw;
+        -webkit-line-clamp: unset; /* number of lines to show */
+        line-clamp: unset; 
+        -webkit-box-orient: vertical;
+    }
+
+    .scroller {
+        gap: 1em;
+        animation: none;
+        transform: translateX(0);
+        min-width: 0;
+    }
+
+    .scroller.two {
+        display: none !important;
+    }
+
+    .warn {
+        padding: 0.5em;
     }
 }
 </style>
