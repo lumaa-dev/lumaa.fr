@@ -1,7 +1,7 @@
 <template>
     <router-link v-bind:to="'/redirect?url=https://modrinth.com/mod/' + mod.id" tabindex="-1">
         <div class="main" tabindex="0">
-                <img :src="mod.icon_url" draggable="false">
+                <img :src="mod.icon_url != null ? mod.icon_url : 'https://raw.githubusercontent.com/lumaa-dev/LumaaTemplate/master/src/main/resources/assets/template/icon.png'" draggable="false">
                 <div class="v">
                     <p class="title">{{ mod.title }}</p>
                     <p>{{ mod.downloads }} {{ $t("stats.downloads") }}</p>
