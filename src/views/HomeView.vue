@@ -20,6 +20,7 @@
     </div>
     <div class="projects">
       <p>Here are my best projects I've ever made!</p>
+      <p>Comig soon...</p>
       <!-- backrooms mod -->
       <!-- usmp -->
       <!-- act -->
