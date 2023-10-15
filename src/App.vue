@@ -28,7 +28,7 @@ import ErrorModalView from '@/components/ErrorModalView.vue'
             return l == "fr" || l == "en" ? l : "";
         },
     },
-    beforeMount() {
+    created() {
         this.loadLang();
     },
     components: { ErrorModalView }
@@ -37,18 +37,18 @@ import ErrorModalView from '@/components/ErrorModalView.vue'
 
 <template>
   <ErrorModalView></ErrorModalView>
-  <nav>
+  <!-- <nav>
     <router-link v-for="(link, index) in links" :key="index" v-bind:to=link.url>{{ $t(link.name) }}</router-link>
-  </nav>
+  </nav> -->
   <div class="content">
     <router-view/>
   </div>
-  <div class="footer">
+  <!-- <div class="footer">
     <p>{{ $t("footer.copyright").replace("[now]", new Date().getFullYear()) }}</p>
     <select @input="event => changeLang(event.target.value)">
       <option :selected="this.lang == lang.id" v-for="(lang, index) in langs" :key="index" v-bind:value="lang.id">{{ $t(lang.name) }}</option>
     </select>
-  </div>
+  </div> -->
 </template>
 
 <style>
@@ -216,7 +216,7 @@ nav a.router-link-exact-active {
 }
 
 .content {
-  padding-top: 13.5vh;
+  padding-top: 30vh;
 }
 
 .footer {
@@ -263,9 +263,9 @@ nav a.router-link-exact-active {
     text-align-last: center;
   }
 
-  .content {
+  /* .content {
     padding-top: 0;
-  }
+  } */
 
   .sep {
     padding: 0;

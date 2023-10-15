@@ -1,7 +1,7 @@
 <template>
     <WarningHeroView warning="Français en cours" v-if="$i18n.locale == 'fr'"></WarningHeroView>
     <div class="middle">
-        <h1>Lumaa</h1>
+        <h1>Rebranding...</h1>
         <p>{{ $t("content.branding.subtitle") }}</p>
     </div>
     <div class="section">

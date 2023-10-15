@@ -1,7 +1,7 @@
 <template>
     <div>
-        <h1>{{ $t("content.redirect.redirecting") }}</h1>
-        <button data-styled @click="this.goBack" v-if="this.lastRoute != ''">{{ $t("content.redirect.back") }}</button>
+        <!-- <h1>{{ $t("content.redirect.redirecting") }}</h1>
+        <button data-styled @click="this.goBack" v-if="this.lastRoute != ''">{{ $t("content.redirect.back") }}</button> -->
     </div>
 </template>
 
@@ -53,9 +53,10 @@ button {
             url = this.addSpecialParam(url)
             if (!this.safeUrl(url) || url.length < 1) url = "/?error=unknown_unsafe_link";
 
-            this.$data.timeout = setTimeout(() => {
-                window.location.href = url
-            }, 1.5*1000);
+            // this.$data.timeout = setTimeout(() => {
+            //     window.location.href = url
+            // }, 1.5*1000);
+            window.location.href = url
         },
         beforeRouteEnter(to, from, next) {
             next(vm => {
