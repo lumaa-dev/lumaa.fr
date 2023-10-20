@@ -10,7 +10,7 @@
 <style>
 .modal {
   position: absolute;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(60, 60, 60, 0.5);
   width: 100vw;
   height: 100vh;
   top: 0;
@@ -36,7 +36,7 @@
 }
 
 .modal[data-closed="true"] {
-  background: rgba(0, 0, 0, 0);
+  background: transparent;
   transition: 0.15s linear background 0.35s;
   pointer-events: none !important;
 }
