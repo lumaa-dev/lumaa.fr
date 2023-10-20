@@ -37,24 +37,24 @@ import ErrorModalView from '@/components/ErrorModalView.vue'
 
 <template>
   <ErrorModalView></ErrorModalView>
-  <!-- <nav>
+  <nav>
     <router-link v-for="(link, index) in links" :key="index" v-bind:to=link.url>{{ $t(link.name) }}</router-link>
-  </nav> -->
+  </nav>
   <div class="content">
     <router-view/>
   </div>
-  <!-- <div class="footer">
+  <div class="footer">
     <p>{{ $t("footer.copyright").replace("[now]", new Date().getFullYear()) }}</p>
     <select @input="event => changeLang(event.target.value)">
       <option :selected="this.lang == lang.id" v-for="(lang, index) in langs" :key="index" v-bind:value="lang.id">{{ $t(lang.name) }}</option>
     </select>
-  </div> -->
+  </div>
 </template>
 
 <style>
 @font-face {
-  font-family: "Nunito";
-  src: url("./assets/Nunito-VariableFont_wght.ttf");
+  font-family: "SourceSans";
+  src: url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,300;0,400;0,500;0,700;0,800;0,900;1,300;1,400;1,500&display=swap');;
 }
 
 @font-face {
@@ -63,13 +63,13 @@ import ErrorModalView from '@/components/ErrorModalView.vue'
 }
 
 :root {
-  --background: #353535;
-  --outline: #ffffff59;
+  --background: #000;
+  --outline: #1e1e1e;
   --brand: #f8bd4a;
   --bkrm: #222fd5;
   --warn: #ffcc00;
 
-  --font: "Nunito", sans-serif;
+  --font: "SourceSans", sans-serif;
   --vcr: "VCR", monospace;
 
   --btn-transition: background 150ms ease-out;
@@ -131,6 +131,11 @@ a[data-styled], button[data-styled] {
 a[data-styled]:hover, button[data-styled]:hover, a[data-styled]:focus-visible, button[data-styled]:focus-visible {
   background: rgba(30, 30, 30, 0.85);
   outline: none !important;
+}
+
+a.discret, b.discret {
+  color: var(--brand);
+  text-decoration: none;
 }
 
 .links {
@@ -197,6 +202,7 @@ nav {
   display: flex;
   justify-content: left;
   background: rgba(0, 0, 0, 0.3);
+  border: #ffffff5c 1px solid;
   border-radius: 20px;
   position: fixed;
   width: calc(100vw - 20px);
@@ -216,7 +222,7 @@ nav a.router-link-exact-active {
 }
 
 .content {
-  padding-top: 30vh;
+  padding-top: 13.5vh;
 }
 
 .footer {
