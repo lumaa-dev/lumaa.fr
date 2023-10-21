@@ -4,6 +4,7 @@ import HomeView from '../views/HomeView.vue'
 import UnknownSmpView from '@/views/UnknownSmpView.vue';
 import BrandView from '@/views/BrandView.vue';
 import ModsView from '@/views/ModsView.vue';
+import TicTacView from '@/views/TicTacView.vue';
 import RedirectView from '@/views/RedirectView.vue';
 import NotFoundView from '@/components/NotFound.vue'
 
@@ -23,6 +24,14 @@ const routes = [
       title: "Unknown SMP"
     },
     component: UnknownSmpView
+  },
+  {
+    path: '/tictac',
+    name: 'TicTac',
+    meta: {
+      title: "TicTac"
+    },
+    component: TicTacView
   },
   {
     path: '/mods',

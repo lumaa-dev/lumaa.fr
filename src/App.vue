@@ -4,7 +4,7 @@ import ErrorModalView from '@/components/ErrorModalView.vue'
   export default {
     data() {
         return {
-            links: [{ url: "/", name: "pages.home" }, { url: "/unknownsmp", name: "usmp" }, { url: "/mods", name: "pages.mods" }, { url: "/branding", name: "pages.branding" }],
+            links: [{ url: "/", name: "pages.home" }, { url: "/tictac", name: "TicTac" }, { url: "/unknownsmp", name: "usmp" }, { url: "/mods", name: "pages.mods" }, { url: "/branding", name: "pages.branding" }],
             lang: "",
             langs: [{ id: "en", name: "languages.en" }, { id: "fr", name: "languages.fr" }]
         };
@@ -232,7 +232,7 @@ nav a.router-link-exact-active {
   background: rgba(0, 0, 0, 0.3);
   color: #ffffff4d;
   padding: 5vh;
-  margin-top: 5vh;
+  /* margin-top: 5vh; */
 }
 
 .footer > p {
