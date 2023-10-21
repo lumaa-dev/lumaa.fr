@@ -27,9 +27,9 @@ const routes = [
   },
   {
     path: '/tictac',
-    name: 'TicTac',
+    name: 'tictac',
     meta: {
-      title: "TicTac"
+      title: "TicTac - By Lumaa"
     },
     component: TicTacView
   },
