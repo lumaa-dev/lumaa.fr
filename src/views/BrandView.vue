@@ -1,6 +1,6 @@
 <template>
     <div class="middle">
-        <h1>Rebranding...</h1>
+        <h1>{{ $t("pages.branding") }}</h1>
         <p>{{ $t("content.branding.subtitle") }}</p>
     </div>
     <div class="section">
