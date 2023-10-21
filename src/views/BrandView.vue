@@ -5,7 +5,7 @@
     </div>
     <div class="section">
         <h2>{{ $t("content.branding.sections.colorsFonts") }}</h2>
-        <div class="colors" id="colors" style="background-color: #ffffff30;">
+        <div class="colors" id="colors">
             <div class="color main">
                 <p>#f8bd4a</p>
                 <p>Source Sans</p>
@@ -25,13 +25,13 @@
         <h2>{{ $t("content.branding.sections.logosIcons") }}</h2>
         <div class="images" id="images">
             <p id="lumaa">PNG Lumaa</p>
-            <div style="background-color: #ffffff30;">
+            <div>
                 <img class="png lumaa" src="../assets/char.png" />
             </div>
             <br />
             <span class="notice">This logo is free to use, can be altered, scaled, rotated, etc... with no limitations.</span>
             <p id="usmp">{{ $t("usmp") }}</p>
-            <div style="background-color: #ffffff30;">
+            <div>
                 <img src="../assets/usmp_blue.png" draggable="false" />
                 <img src="../assets/usmp_transparent.png" draggable="false" />
             </div>
