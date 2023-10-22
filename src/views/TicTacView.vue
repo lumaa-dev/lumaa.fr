@@ -1,4 +1,5 @@
 <template>
+	<meta style="display: none" name="apple-itunes-app" content="app-id=6468402716">
 	<div class="ios">
 		<div class="app">
 			<img src="../assets/tictac/icon.png" alt="TicTac App icon" />
