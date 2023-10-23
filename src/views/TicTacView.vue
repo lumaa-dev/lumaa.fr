@@ -40,11 +40,9 @@
 			possibilité de classer vos tâches dans n'importe quel ordre, pour ne jamais
 			en oublier une.
 		</p>
-		<p class="appstore">Bientôt sur l'App Store</p>
-		<!-- COMING SOON -->
-		<!-- <a class="appstore" href="https://apps.apple.com/fr/app/tic-tac/id6468402716">
+		<a class="appstore" href="https://apps.apple.com/us/app/tictac-g%C3%A9rez-votre-temps/id6468402716">
             <img src="../assets/tictac/app_store_black_badge.svg" alt="Télécharger dans l'App Store"/>
-        </a> -->
+        </a>
 	</div>
 </template>
 
