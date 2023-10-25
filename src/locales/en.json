@@ -13,6 +13,17 @@
       "community": "Community Discord",
       "support": "Mod Support"
     },
+    "tictac": {
+      "caption": "Remember the things that matter to you, count down the events that are dear to your heart, and observe the tasks that are left for you.",
+      "description": {
+        "dynamicIsland": "Dynamic Island",
+        "one": "By using TicTac, you can record your reminders with various levels of importance. There is also a notification feature that alerts you several hours in advance, turning your reminder into a live activity and in your",
+        "two": ". You can mark it as completed at any time of the day, either from the application or through the reminders widget.\n\nYou will also find counters that counts down in real-time from the current date to a date of your choice. You can associate an icon that best represents the event, visible on your home and lock screens thanks to the counters widget. Additionally, you can display a counter in your",
+        "three": "and view it as a live activity on your lock screen.\n\nFinally, organize your tasks from the application by selecting a descriptive icon for each task. You have the option to designate tasks as essential to never forget them."
+      },
+      "download": "Download on the App Store",
+      "badgeAsset": "https://lumaa.fr/static/en_app_store_black_badge.svg"
+    },
     "usmp": {
       "body": "The Unknown SMP is a private Minecraft server half-scripted half-survival, created by Lumaa and Patate Givrée. The Unknown SMP is entirely running in The Backrooms, mod also by Lumaa (V-Fast).",
       "socials": "Find the Unknown SMP now!"

@@ -1,13 +1,15 @@
 <template>
-	<meta style="display: none" name="apple-itunes-app" content="app-id=6468402716">
+	<meta
+		style="display: none"
+		name="apple-itunes-app"
+		content="app-id=6468402716"
+	/>
 	<div class="ios">
 		<div class="app">
 			<img src="../assets/tictac/icon.png" alt="TicTac App icon" />
 			<h1>TicTac</h1>
 			<p class="caption">
-				Rappelez-vous des choses qui comptent pour vous, décomptez les
-				événements qui vous tiennent à cœur et observez les tâches qu'il vous
-				reste.
+				{{ $t("content.tictac.caption") }}
 			</p>
 		</div>
 		<div class="h-gallery">
@@ -17,32 +19,26 @@
 			<img src="../assets/tictac/tasks.png" />
 			<img src="../assets/tictac/dynamic_island.png" />
 		</div>
-		<p>En utilisant TicTac, vous pouvez enregistrer vos rappels avec différents
-			niveaux d'importance. Il y a également une fonctionnalité de notification
-			plusieurs heures à l'avance, qui transforme votre rappel en une activité
-			en direct sur votre
-			<a href="https://support.apple.com/fr-fr/guide/iphone/iph28f50d10d/ios"
-				>Dynamic Island</a
-			>. Vous pouvez le marquer comme accompli à tout moment de la journée, que
-			ce soit depuis l'application ou depuis le widget de rappels.
-			<br /><br />Vous trouverez également des compteurs qui font un décompte en
-			temps réel de la date actuelle jusqu'à une date de votre choix. Vous
-			pouvez associer une icône représentant au mieux l'événement, visible sur
-			votre écran d'accueil et de verrouillage grâce au widget de compteurs. De
-			plus, vous pouvez afficher un compteur sur votre
-			<a href="https://support.apple.com/fr-fr/guide/iphone/iph28f50d10d/ios"
-				>Dynamic Island</a
-			>
-			et le voir comme une activité en direct sur votre écran de verrouillage.
-
-			<br /><br />Enfin, organisez vos tâches depuis l'application en
-			sélectionnant une icône descriptive pour chaque tâche. Vous avez la
-			possibilité de classer vos tâches dans n'importe quel ordre, pour ne jamais
-			en oublier une.
+		<p>
+			{{ $t("content.tictac.description.one") }}
+			<a href="https://support.apple.com/fr-fr/guide/iphone/iph28f50d10d/ios">{{
+				$t("content.tictac.description.dynamicIsland")
+			}}</a
+			>{{ $t("content.tictac.description.two") }}
+			<a href="https://support.apple.com/fr-fr/guide/iphone/iph28f50d10d/ios">{{
+				$t("content.tictac.description.dynamicIsland")
+			}}</a>
+			{{ $t("content.tictac.description.three") }}
 		</p>
-		<a class="appstore" href="https://apps.apple.com/us/app/tictac-g%C3%A9rez-votre-temps/id6468402716">
-            <img src="../assets/tictac/app_store_black_badge.svg" alt="Télécharger dans l'App Store"/>
-        </a>
+		<a
+			class="appstore"
+			href="https://apps.apple.com/fr/app/tictac-g%C3%A9rez-votre-temps/id6468402716"
+		>
+			<img
+				:src="$t('content.tictac.badgeAsset')"
+				:alt="$t('content.tictac.download')"
+			/>
+		</a>
 	</div>
 </template>
 
