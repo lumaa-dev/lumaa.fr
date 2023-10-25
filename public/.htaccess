@@ -1,3 +1,0 @@
-RewriteEngine On
-RewriteCond %{HTTP_USER_AGENT} (Googlebot|bingbot|Slurp|Twitterbot|Discordbot|WhatsApp|Facebookexternalhit) [NC]
-RewriteRule ^.*$ another-page.html [L]`
