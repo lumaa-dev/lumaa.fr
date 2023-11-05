@@ -29,15 +29,15 @@
                 <img class="png lumaa" src="../assets/char.png" />
             </div>
             <br />
-            <span class="notice">This logo is free to use, can be altered, scaled, rotated, etc... with no limitations.</span>
-            <p id="usmp">{{ $t("usmp") }}</p>
+            <span class="notice">{{ $t("content.branding.limitations.none") }}</span>
+            <!-- <p id="usmp">{{ $t("usmp") }}</p>
             <div>
                 <img src="../assets/usmp_blue.png" draggable="false" />
                 <img src="../assets/usmp_transparent.png" draggable="false" />
             </div>
             <p class="notice">The Unknown SMP logo is under copyright of Lumaa 2022-2023.</p>
             <span class="notice">These logos should conform to the following rules: The logo using a blue background should not be altered or rotated in any shape of form. The transparent logo can be tilted, scaled, but it can either have a small white border or no border at all.</span>
-            <!-- <p id="mods">{{ $t("pages.mods") }}</p>
+            <p id="mods">{{ $t("pages.mods") }}</p>
             <span>All mods icons and logos can be found down below</span>
             <div class="center"><div class="links"><router-link data-styled to="/mods">{{ $t("pages.mods") }}</router-link></div></div>
             <span class="notice">Legal info will be written later.</span> -->
