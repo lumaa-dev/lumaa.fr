@@ -15,13 +15,6 @@
 		<a href="/branding#usmp">Logo</a>
 		<a href="https://teaser.lumaa.fr/">Teaser</a>
 	</div>
-	<h2>Grand Opening</h2>
-	<p class="sep">
-		The Grand Opening is a one-time in-game event that starts the Unknown SMP
-		that happens on November 1st 2023 at 7:30 GMT
-    <br />
-    This event is exclusively streamed on Twitch at <router-link class="discret" to="/twitch">twitch.tv/lumaa_dev</router-link>.
-	</p>
 </template>
 
 <script>
