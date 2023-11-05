@@ -1,17 +1,26 @@
 <template>
-	<meta
-		style="display: none"
-		name="apple-itunes-app"
-		content="app-id=6468402716"
-	/>
 	<div class="ios">
 		<div class="app">
-			<img src="../assets/tictac/icon.png" alt="TicTac App icon" />
+			<img
+				src="../assets/tictac/icon.png"
+				class="no-radius"
+				alt="TicTac App icon"
+			/>
 			<h1>TicTac</h1>
 			<p class="caption">
 				{{ $t("content.tictac.caption") }}
 			</p>
 		</div>
+		<iframe
+			width="560"
+			height="315"
+			src="https://www.youtube.com/embed/eDbPkcXqInE?si=7HCJpciic6hZP0H9&amp;controls=1"
+			title="YouTube video player"
+			frameborder="0"
+			allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+			allowfullscreen
+			style="border-radius: 2.5vh"
+		></iframe>
 		<div class="h-gallery">
 			<img src="../assets/tictac/welcome.png" />
 			<img src="../assets/tictac/reminders.png" />
@@ -32,7 +41,7 @@
 		</p>
 		<a
 			class="appstore"
-			href="https://apps.apple.com/fr/app/tictac-g%C3%A9rez-votre-temps/id6468402716"
+			href="https://apps.apple.com/us/app/tictac-manage-your-time/id6468402716"
 		>
 			<img
 				:src="$t('content.tictac.badgeAsset')"
@@ -65,6 +74,11 @@
 		margin: 2vh;
 	}
 
+	.appicon,
+	.app img.no-radius {
+		border-radius: 0;
+	}
+
 	.app h1,
 	.ios .title {
 		font-size: 4.5em;
@@ -83,7 +97,7 @@
 
 	.h-gallery {
 		/* Horizontal Gallery */
-		overflow: scroll hidden;
+		overflow: auto hidden;
 		display: flex;
 		flex-direction: row;
 		align-items: center;
