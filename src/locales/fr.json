@@ -25,7 +25,7 @@
       "badgeAsset": "https://lumaa.fr/static/fr_app_store_black_badge.svg"
     },
     "usmp": {
-      "body": "La Unknown SMP est un serveur Minecraft privé mi-scripté mi-survie, créé par Lumaa et Patate Givrée. La Unknown SMP se déroule entièrement dans les Backrooms, mod également fait par Lumaa (V-Fast).",
+      "body": "La Unknown SMP est un serveur Minecraft privé mi-scripté mi-survie, créé par Lumaa et PatateGivrée. La Unknown SMP se déroule entièrement dans les Backrooms, mod également fait par Lumaa (V-Fast).",
       "socials": "Trouvez la Unknown SMP maintenant !"
     },
     "mods": {
@@ -36,6 +36,9 @@
       "sections": {
         "colorsFonts": "Couleurs & Polices",
         "logosIcons": "Logos & Icônes"
+      },
+      "limitations": {
+        "none": "Ce logo est libre d'utilisation, il peut être altéré, agrandi, tourné, etc... sans limitations."
       }
     },
     "redirect": {
@@ -67,7 +70,5 @@
   },
   "footer": {
     "copyright": "© Copyright Lumaa 2022-[now]. Tous droits réservés"
-  },
-
-  "rebranding": "Marque en cours de fabrication..."
+  }
 }

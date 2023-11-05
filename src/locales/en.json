@@ -36,6 +36,9 @@
       "sections": {
         "colorsFonts": "Colors & Fonts",
         "logosIcons": "Logos & Icons"
+      },
+      "limitations": {
+        "none": "This logo is free to use, can be altered, scaled, rotated, etc... with no limitations."
       }
     },
     "redirect": {
@@ -67,7 +70,5 @@
   },
   "footer": {
     "copyright": "© Copyright Lumaa 2022-[now]. All Rights Reserved"
-  },
-
-  "rebranding": "Re-branding..."
+  }
 }
