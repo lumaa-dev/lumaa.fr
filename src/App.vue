@@ -26,17 +26,18 @@
 				localStorage.setItem("lang", lang);
 			},
 			loadLang() {
-        setTimeout(() => {
-          let lang = this.urlLang() || localStorage.getItem("lang") || "en";
-				console.log("sel lang " + lang);
-				this.lang = lang;
-				this.$i18n.locale = lang;
-        }, 100);
+				setTimeout(() => {
+					let lang = this.urlLang() || localStorage.getItem("lang") || "en";
+					console.log("sel lang " + lang);
+					this.lang = lang;
+					this.$i18n.locale = lang;
+				}, 100);
 			},
 			urlLang() {
-				let l = this.$route.query.lang == undefined ? "" : this.$route.query.lang;
-					console.log(this.$route.query.lang);
-					return l == "fr" || l == "en" ? l : null;
+				let l =
+					this.$route.query.lang == undefined ? "" : this.$route.query.lang;
+				console.log(this.$route.query.lang);
+				return l == "fr" || l == "en" ? l : null;
 			},
 		},
 		beforeMount() {
