@@ -6,7 +6,7 @@
 			return {
 				links: [
 					{ url: "/", name: "pages.home" },
-					{ url: "/tictac", name: "TicTac" },
+					{ url: "/apps", name: "pages.apps" },
 					{ url: "/unknownsmp", name: "usmp" },
 					{ url: "/mods", name: "pages.mods" },
 					{ url: "/branding", name: "pages.branding" },

@@ -4,7 +4,7 @@ import HomeView from '../views/HomeView.vue'
 import UnknownSmpView from '@/views/UnknownSmpView.vue';
 import BrandView from '@/views/BrandView.vue';
 import ModsView from '@/views/ModsView.vue';
-import TicTacView from '@/views/TicTacView.vue';
+// import TicTacView from '@/views/TicTacView.vue';
 import RedirectView from '@/views/RedirectView.vue';
 import NotFoundView from '@/components/NotFound.vue'
 
@@ -24,14 +24,6 @@ const routes = [
       title: "Unknown SMP"
     },
     component: UnknownSmpView
-  },
-  {
-    path: '/tictac',
-    name: 'tictac',
-    meta: {
-      title: "TicTac - By Lumaa"
-    },
-    component: TicTacView
   },
   {
     path: '/mods',
@@ -74,6 +66,14 @@ const customRedirections = [
     redirect: redirect("https://discord.gg/Rqpn3C7yR5")
   },
   {
+    path: "/apps",
+    redirect: redirect("https://apps.lumaa.fr/")
+  },
+  {
+    path: "/tictac",
+    redirect: redirect("https://apps.lumaa.fr/app/tictac")
+  },
+  {
     path: "/community",
     redirect: redirect("https://discord.gg/jQ2XcVbpbQ")
   },
@@ -96,6 +96,10 @@ const customRedirections = [
   {
     path: "/github",
     redirect: redirect("https://github.com/lumaa-dev")
+  },
+  {
+    path: "/mastodon",
+    redirect: redirect("https://techhub.social/@lumaa")
   },
   {
     path: "/v-fast",
