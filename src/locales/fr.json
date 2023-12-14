@@ -4,11 +4,12 @@
   "pages": {
     "home": "Accueil",
     "mods": "Mods",
-    "branding": "Marque"
+    "branding": "Marque",
+    "apps": "Applis"
   },
   "content": {
     "home": {
-      "description": "Je suis un jeune développeur indépendant. Je fais des mods Minecraft, bots Discord, et de la création de contenu\n\nMon mod Backrooms étant le plus populaire avec 2 000 téléchargements en un an.",
+      "description": "Je suis un jeune développeur indépendant. Je fais applis iOS/iPadOS dans l'App Store, des mods Minecraft, et quelques fois de la création de contenu.",
       "socials": "Trouvez Lumaa sur internet ici :",
       "community": "Discord Communautaire",
       "support": "Aide pour mods"
