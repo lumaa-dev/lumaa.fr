@@ -1,59 +1,74 @@
 <template>
-  <WarningHeroView warning="Testing website" v-if="link.includes('localhost')"></WarningHeroView>
-  <div class="home">
-    <h1>Lumaa</h1>
-    <p class="sub">{{ $t("motto") }}</p>
+	<WarningHeroView
+		warning="Testing website"
+		v-if="link.includes('localhost')"
+	></WarningHeroView>
+	<div class="home">
+		<h1 class="name"><span class="string">"Lumaa"</span></h1>
+		<h2 class="sub">
+			<span class="keyword">Text</span>(<span class="string"
+				>"Développeur avec la tête vide."</span
+			>)
+		</h2>
+		<div class="sep"></div>
+    <img src="../assets/char.png" alt="Lumaa character" />
+    <p><span class="keyword">Image</span>(<span class="string"
+				>"char.png"</span
+			>)</p>
+		<div class="sep"></div>
+		<p>SwiftUI indie developer since 2022<br />Developer since 2021</p>
     <div class="sep"></div>
-    <pre class="apd">{{ $t("content.home.description") }}</pre>
-    <div class="sep"></div>
-    <h2>{{ $t("content.home.socials") }}</h2>
-    <div class="links">
-      <a href="https://youtube.com/@lumaa_dev">YouTube</a>
-      <a href="https://twitch.com/lumaa_dev">Twitch</a>
-      <a href="https://instagram.com/lumaa_dev">Instagram</a>
-      <a href="https://techhub.social/@lumaa">Mastodon</a>
-      <a href="https://tiktok.com/@lumaa_dev">TikTok</a>
-      <a href="https://github.com/lumaa-dev">GitHub</a>
-      <a href="https://modrinth.com/user/Lumaa">Modrinth</a>
-      <a href="mailto:lumaa@lumaa.fr">lumaa@lumaa.fr</a>
-      <router-link to="/support">{{ $t("content.home.support") }}</router-link>
-      <router-link to="/community">{{ $t("content.home.community") }}</router-link>
-    </div>
-  </div>
+    <a href="https://apps.lumaa.fr/">My apps</a>
+    <router-link to="/mastodon">Mastodon</router-link>
+    <router-link to="/threads">Threads</router-link>
+    <router-link to="/github">GitHub</router-link>
+    <router-link to="/youtube">YouTube</router-link>
+    <router-link to="/twitch">Twitch</router-link>
+    <a href="mailto:lumaa@lumaa.fr">lumaa@lumaa.fr</a>
+	</div>
 </template>
 
 <script>
-import WarningHeroView from '@/components/WarningHeroView.vue';
+	import WarningHeroView from "@/components/WarningHeroView.vue";
 
-export default {
-  data() {
-    return {
-      link: null
-    }
-  },
-  beforeMount() {
-    this.$data.link = window.location.href;
-  },
-  head: {
-      meta: [
-        { name: "og:title", content: "Développeur avec la tête vide.\nLearn more about Lumaa" },
-        { name: "og:type", content: "website" },
-        { name: "og:url", content: "https://lumaa.fr/" }
-    ]
-  },
-  components: { WarningHeroView }
-}
+	export default {
+		data() {
+			return {
+				link: null,
+			};
+		},
+		beforeMount() {
+			this.$data.link = window.location.href;
+		},
+		head: {
+			meta: [
+				{
+					name: "og:title",
+					content: "Développeur avec la tête vide.\nLearn more about Lumaa",
+				},
+				{ name: "og:type", content: "website" },
+				{ name: "og:url", content: "https://lumaa.fr/" },
+			],
+		},
+		components: { WarningHeroView },
+	};
 </script>
 
 <style scoped>
-h1 {
-  font-size: 3.5em;
-}
+	.name {
+		font-size: 2em;
+	}
 
-.home {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  flex-wrap: wrap;
-}
+  img {
+    width: 70vw;
+  }
+
+	.home {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		flex-wrap: wrap;
+		gap: 1vh;
+		padding-top: 5vh;
+	}
 </style>

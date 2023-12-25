@@ -1,10 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import { nextTick } from "vue"
 import HomeView from '../views/HomeView.vue'
-import UnknownSmpView from '@/views/UnknownSmpView.vue';
-import BrandView from '@/views/BrandView.vue';
-import ModsView from '@/views/ModsView.vue';
-// import TicTacView from '@/views/TicTacView.vue';
 import RedirectView from '@/views/RedirectView.vue';
 import NotFoundView from '@/components/NotFound.vue'
 
@@ -16,27 +12,6 @@ const routes = [
       title: "Lumaa"
     },
     component: HomeView
-  },
-  {
-    path: '/unknownsmp',
-    name: 'unknownsmp',
-    meta: {
-      title: "Unknown SMP"
-    },
-    component: UnknownSmpView
-  },
-  {
-    path: '/mods',
-    name: 'mods',
-    meta: {
-      title: "Lumaa - Mods"
-    },
-    component: ModsView
-  },
-  {
-    path: '/branding',
-    name: 'brand',
-    component: BrandView
   },
   {
     path: '/redirect',
@@ -100,6 +75,10 @@ const customRedirections = [
   {
     path: "/mastodon",
     redirect: redirect("https://techhub.social/@lumaa")
+  },
+  {
+    path: "/threads",
+    redirect: redirect("https://threads.net/@lumaa_dev")
   },
   {
     path: "/v-fast",

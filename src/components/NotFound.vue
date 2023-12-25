@@ -1,9 +1,9 @@
 <template>
     <div class="notfound">
-        <h1>{{ $t("error.notfound.title") }}</h1>
-        <h2>{{ $t("error.notfound.subtitle") }}</h2>
+        <h1><span class="keyword">Error</span>(<span class="int">404</span>)</h1>
+        <h2><span class="keyword">fatalError</span>(<span class="string">"Seems like you lost yourself... How?"</span>)</h2>
         <div class="sep"></div>
-        <router-link to="/" data-styled>{{ $t("error.notfound.button") }}</router-link>
+        <router-link to="/" data-styled></router-link>
     </div>
 </template>
 
@@ -14,7 +14,7 @@
     align-items: center;
     justify-content: center;
     width: 100vw;
-    height: calc(100vh - 81.5px);
+    height: 70vh;
 }
 
 a[data-styled] {

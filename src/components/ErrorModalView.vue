@@ -1,15 +1,15 @@
 <template>
     <div v-if="string != ''" :data-closed="closed" class="modal" @click="closeModal()">
         <div class="content">
-            <p>{{ $t("error." + $data.string) }}</p>
-            <p class="dismiss">{{ $t("components.modal.close") }}</p>
+            <p><span class="keyword">Error</span>(<span class="string">"{{ $data.string }}"</span>)</p>
+            <p class="dismiss">Tap/Click to dismiss</p>
         </div>
     </div>
 </template>
 
 <style>
 .modal {
-  position: absolute;
+  position: fixed;
   background: rgba(60, 60, 60, 0.5);
   width: 100vw;
   height: 100vh;
@@ -24,7 +24,7 @@
 .modal > .content {
   background: var(--background);
   padding: 5vh;
-  max-width: 40vh;
+  max-width: 60vh;
   border-radius: 15px;
   pointer-events: none;
   transform: scale(1);
