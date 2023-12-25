@@ -60,7 +60,7 @@
 	}
 
   img {
-    width: 70vw;
+    height: 25vh;
   }
 
 	.home {
