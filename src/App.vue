@@ -76,7 +76,8 @@
 		--x-var: #78c2b3;
 		--x-int: #d0bf69;
 
-		--font: "SF Mono", "Consolas", "JetBrains Mono", monospace;
+		--font: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+		--font-mono: "SF Mono", "Consolas", "JetBrains Mono", monospace;
 
 		--btn-transition: background 150ms ease-out;
 	}
@@ -166,6 +167,7 @@
 	.footer > p {
 		text-align: right;
 		font-size: 0.8em;
+		font-family: var(--font-mono);
 	}
 
 	/* --- MOBILE --- */
