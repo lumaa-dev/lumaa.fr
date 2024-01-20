@@ -12,7 +12,7 @@
 	export default {
 		data() {
 			const now = new Date()
-			const count = new Date("February 1, 2023, GMT+0200 14:00:00")
+			const count = new Date("January 20, 2024, GMT+0200 22:30:00")
 			let rem = count.getTime() - now.getTime()
 
 			if (rem <= 0) {
