@@ -1,74 +1,56 @@
 <template>
-	<WarningHeroView
-		warning="Testing website"
-		v-if="link.includes('localhost')"
-	></WarningHeroView>
-	<div class="home">
-		<h1 class="name"><span class="string">"Lumaa"</span></h1>
-		<h2 class="sub">
-			<span class="keyword">Text</span>(<span class="string"
-				>"Développeur avec la tête vide."</span
-			>)
-		</h2>
-		<div class="sep"></div>
-    <img src="../assets/char.png" alt="Lumaa character" />
-    <p><span class="keyword">Image</span>(<span class="string"
-				>"char.png"</span
-			>)</p>
-		<div class="sep"></div>
-		<p>SwiftUI indie developer since 2022<br />Developer since 2021</p>
-    <div class="sep"></div>
-    <a href="https://apps.lumaa.fr/">My apps</a>
-    <router-link to="/mastodon">Mastodon</router-link>
-    <router-link to="/threads">Threads</router-link>
-    <router-link to="/github">GitHub</router-link>
-    <router-link to="/youtube">YouTube</router-link>
-    <router-link to="/twitch">Twitch</router-link>
-    <a href="mailto:lumaa@lumaa.fr">lumaa@lumaa.fr</a>
-	</div>
+	<span class="m" v-if="time > 0">
+		<span class="title">A new direction</span>
+		<vue-countdown :time="time" v-slot="{ days, hours, minutes, seconds }" class="c">
+			{{ days }}d, {{ hours }}hrs, {{ minutes }}mins, {{ seconds }}secs
+		</vue-countdown>
+	</span>
+	<img src="../assets/hero/dark_pro-rebrand.jpg" v-if="time <= 0" class="br" draggable="false">
 </template>
 
 <script>
-	import WarningHeroView from "@/components/WarningHeroView.vue";
-
 	export default {
 		data() {
+			const now = new Date()
+			const count = new Date("February 1, 2023, GMT+0200 14:00:00")
+			let rem = count.getTime() - now.getTime()
+
+			if (rem <= 0) {
+				setTimeout(() => {
+					window.location.href = "https://youtu.be/KV2ytOy7cGU"
+				}, 1.5*1000);
+			}
+
 			return {
-				link: null,
+				time: rem,
 			};
 		},
-		beforeMount() {
-			this.$data.link = window.location.href;
-		},
-		head: {
-			meta: [
-				{
-					name: "og:title",
-					content: "Développeur avec la tête vide.\nLearn more about Lumaa",
-				},
-				{ name: "og:type", content: "website" },
-				{ name: "og:url", content: "https://lumaa.fr/" },
-			],
-		},
-		components: { WarningHeroView },
 	};
 </script>
 
 <style scoped>
-	.name {
-		font-size: 2em;
-	}
-
-  img {
-    height: 25vh;
-  }
-
-	.home {
+	span {
 		display: flex;
 		flex-direction: column;
+		justify-content: center;
 		align-items: center;
-		flex-wrap: wrap;
-		gap: 1vh;
-		padding-top: 5vh;
+	}
+
+	span.m {
+		height: 85vh;
+	}
+
+	.title {
+		font-size: 2em;
+		padding: 1em;
+	}
+
+	.c {
+		font-size: 1.75em;
+		font-weight: 500;
+	}
+
+	.br {
+		height: 80vh;
 	}
 </style>
