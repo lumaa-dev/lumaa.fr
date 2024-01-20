@@ -15,6 +15,7 @@
     justify-content: center;
     width: 100vw;
     height: 70vh;
+    font-family: var(--font-mono);
 }
 
 a[data-styled] {
