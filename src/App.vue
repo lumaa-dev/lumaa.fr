@@ -76,20 +76,83 @@
 		--x-var: #78c2b3;
 		--x-int: #d0bf69;
 
-		--font: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+		--font: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+			Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 		--font-mono: "SF Mono", "Consolas", "JetBrains Mono", monospace;
 
 		--btn-transition: background 150ms ease-out;
 	}
 
 	p,
-	a,
+	a:not(p > a),
 	pre {
 		font-size: 1.3em;
 		font-family: var(--font);
 		max-width: 100vw;
 		white-space: pre-wrap;
 		word-wrap: break-word;
+	}
+
+	p > a {
+		font-family: var(--font);
+		max-width: 100vw;
+		white-space: pre-wrap;
+		word-wrap: break-word;
+	}
+
+	a.br,
+	button.br {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+		background: var(--background);
+		color: #fff;
+		aspect-ratio: 250 / 52.3;
+		width: 360px;
+		max-width: 360px;
+		max-height: 75px;
+		outline: none;
+		border-radius: 15px;
+		border: solid 3px #fff;
+		text-decoration: none !important;
+		cursor: pointer;
+		transition: 0.25s all;
+	}
+
+	a.br > .label,
+	button.br > .label {
+		font-size: 2vh;
+		font-weight: 700;
+		margin: 0 1em;
+		max-width: 250px;
+	}
+
+	a.br::after,
+	button.br::after {
+		content: "";
+		background-image: url("./assets/hero/uni_play_white.svg");
+		background-size: 33px;
+		aspect-ratio: 10 / 11.33;
+		display: block;
+		height: 37px;
+		max-width: 33px;
+		max-height: 37px;
+		margin: 0 1.25em 0 0;
+		filter: invert(0);
+		transition: 0.25s all;
+	}
+
+	a.br:hover,
+	button.br:hover {
+		color: var(--background);
+		background: #fff;
+		border: solid 3px #fff;
+	}
+
+	a.br:hover::after,
+	button.br:hover::after {
+		filter: invert(1);
 	}
 
 	p.apd,
@@ -140,7 +203,8 @@
 		text-decoration: none;
 	}
 
-	a:hover,button:hover {
+	a:hover,
+	button:hover {
 		text-decoration: underline;
 	}
 
@@ -170,9 +234,17 @@
 		font-family: var(--font-mono);
 	}
 
+	img.brand {
+		width: 5vw;
+	}
+
 	/* --- MOBILE --- */
 
 	@media screen and (max-width: 850px) {
+		.mob-hide {
+			display: none !important;
+		}
+
 		.footer {
 			flex-direction: column-reverse;
 		}
@@ -183,6 +255,10 @@
 
 		.sep {
 			padding: 2.5vh;
+		}
+
+		img.brand {
+			width: 15vw;
 		}
 	}
 </style>
