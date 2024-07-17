@@ -10,20 +10,34 @@
 		<p class="title">Lumaa</p>
 		<div class="sep"></div>
 		<span style="gap: 1em" class="flex">
-			<p>Indie developer:<br />Swift, Vue, Java, and others</p>
 			<p>
-				Projects:<br /><a href="https://apps.lumaa.fr/app/threaded">Threaded</a
-				>, <a href="https://apps.lumaa.fr/app/byheart">ByHeart</a>...
+				Indie developer since 2021:<br />Swift, JavaScript / Node.JS, Java, and
+				others
 			</p>
+			<p>Proudly French</p>
+		</span>
+		<div class="sep"></div>
+		<span style="gap: 1em" class="flex">
+			<p class="title">My primary projects:</p>
+			<a href="https://apps.lumaa.fr/app/threaded" class="br"
+				><span class="label">Threaded App</span></a
+			>
+			<a href="https://github.com/lumaa-dev/ProboscisKit" class="br"
+				><span class="label">ProboscisKit</span></a
+			>
+			<a href="https://lumaa.fr/tictac" class="br"
+				><span class="label">TicTac App</span></a
+			>
 		</span>
 		<div class="sep"></div>
 		<span style="gap: 1em" class="flex">
 			<p class="title">Follow me:</p>
-			<a href="https://read.cv/lumaa" class="br"><span class="label">read.cv</span></a>
 			<router-link to="/mastodon" class="br"
 				><span class="label">Mastodon</span></router-link
 			>
-			<a href="https://lemmy.world/u/lumaa" class="br"><span class="label">Lemmy</span></a>
+			<router-link to="/lemmy" class="br"
+				><span class="label">Lemmy</span></router-link
+			>
 			<router-link to="/threads" class="br"
 				><span class="label">Threads</span></router-link
 			>
@@ -31,8 +45,57 @@
 				><span class="label">GitHub</span></router-link
 			>
 			<router-link to="/apps" class="br"
-				><span class="label">Apps</span></router-link
+				><span class="label">Apple Apps</span></router-link
 			>
+			<router-link to="/youtube" class="br"
+				><span class="label">YouTube</span></router-link
+			>
+			<router-link to="/readcv" class="br"
+				><span class="label">read.cv</span></router-link
+			>
+			<router-link to="/substack" class="br">
+				<span class="label">Newsletter</span>
+			</router-link>
+		</span>
+		<div class="sep"></div>
+		<span style="gap: 1em" class="flex">
+			<p class="title">Past projects:</p>
+			<a href="https://modrinth.com/mod/backrooms" class="br">
+				<div class="labels">
+					<span class="label">Backrooms Mod</span>
+					<span class="sublabel">2022-2023</span>
+				</div>
+			</a>
+			<a href="https://github.com/lumaa-dev/NumMemory" class="br">
+				<div class="labels">
+					<span class="label">NumMemory App</span>
+					<span class="sublabel">2024</span>
+				</div>
+			</a>
+			<a href="https://github.com/lumaa-dev/ModrinthApp" class="br">
+				<div class="labels">
+					<span class="label">Modrinth App</span>
+					<span class="sublabel">2023</span>
+				</div>
+			</a>
+			<a href="https://github.com/lumaa-dev/Lockwords" class="br">
+				<div class="labels">
+					<span class="label">Passwords App</span>
+					<span class="sublabel">2023</span>
+				</div>
+			</a>
+			<a href="https://github.com/lumaa-dev/Utils" class="br">
+				<div class="labels">
+					<span class="label">Utils Bot</span>
+					<span class="sublabel">2022-2023</span>
+				</div>
+			</a>
+			<a href="https://github.com/lumaa-dev/Keymey" class="br">
+				<div class="labels">
+					<span class="label">Keymey Bot</span>
+					<span class="sublabel">2021-2023</span>
+				</div>
+			</a>
 		</span>
 	</span>
 </template>

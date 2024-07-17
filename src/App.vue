@@ -116,16 +116,39 @@
 		border-radius: 15px;
 		border: solid 3px #fff;
 		text-decoration: none !important;
+		text-align: left;
 		cursor: pointer;
 		transition: 0.25s all;
 	}
 
-	a.br > .label,
-	button.br > .label {
-		font-size: 2vh;
-		font-weight: 700;
+	a.br > .labels,
+	button.br > .labels {
 		margin: 0 1em;
 		max-width: 250px;
+		text-align: left;
+	}
+
+	a.br .label,
+	button.br .label {
+		font-size: 2vh;
+		font-weight: 700;
+		max-width: 250px;
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+		align-items: center;
+	}
+
+	a.br .sublabel,
+	button.br .sublabel {
+		font-size: 1.3vh;
+		font-weight: 400;
+		max-width: 250px;
+		opacity: 0.7;
+	}
+
+	a.br > .label, a.br > .sublabel {
+		margin: 0 1em;
 	}
 
 	a.br::after,

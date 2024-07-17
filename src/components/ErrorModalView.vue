@@ -1,5 +1,5 @@
 <template>
-    <div v-if="string != ''" :data-closed="closed" class="modal" @click="closeModal()">
+    <div v-if="string != ''" :data-closed="closed" class="modal error" @click="closeModal()">
         <div class="content">
             <p><span class="keyword">Error</span>(<span class="string">"{{ $data.string }}"</span>)</p>
             <p class="dismiss">Tap/Click to dismiss</p>
@@ -8,6 +8,7 @@
 </template>
 
 <style>
+
 .modal {
   position: fixed;
   background: rgba(60, 60, 60, 0.5);
@@ -19,6 +20,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.modal.error > .content p {
+    font-family: var(--font-mono) !important;
 }
 
 .modal > .content {

@@ -36,9 +36,9 @@ button {
             },
             addSpecialParam(url) {
                 if (!url.includes("?")) {
-                    return url + "?source=lumaa"
+                    return url + "?utm_source=lumaa"
                 } else {
-                    return url + "&source=lumaa"
+                    return url + "&utm_source=lumaa"
                 }
             },
             goBack() {

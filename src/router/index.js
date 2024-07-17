@@ -41,32 +41,24 @@ const customRedirections = [
     redirect: redirect("https://discord.gg/Rqpn3C7yR5")
   },
   {
-    path: "/apps",
-    redirect: redirect("https://apps.lumaa.fr/")
-  },
-  {
-    path: "/tictac",
-    redirect: redirect("https://apps.lumaa.fr/app/tictac")
-  },
-  {
-    path: "/community",
-    redirect: redirect("https://discord.gg/jQ2XcVbpbQ")
-  },
-  {
     path: "/twitch",
     redirect: redirect("https://twitch.tv/lumaa_dev")
   },
   {
     path: "/youtube",
-    redirect: redirect("https://youtube.com/@lumaa_dev?sub_confirmation=1")
-  },
-  {
-    path: "/tiktok",
-    redirect: redirect("https://tiktok.com/@lumaa_dev")
+    redirect: redirect("https://youtube.com/@Lumaa_PRO?sub_confirmation=1")
   },
   {
     path: "/instagram",
     redirect: redirect("https://instagram.com/lumaa_dev")
+  },
+  {
+    path: "/reddit",
+    redirect: redirect("https://reddit.com/u/UnderscoreLumination")
+  },
+  {
+    path: "/lemmy",
+    redirect: redirect("https://lemmy.world/u/Lumaa")
   },
   {
     path: "/github",
@@ -88,6 +80,14 @@ const customRedirections = [
   {
     path: "/modrinth",
     redirect: redirect("https://modrinth.com/user/Lumaa")
+  },
+  {
+    path: "/readcv",
+    redirect: redirect("https://read.cv/lumaa")
+  },
+  {
+    path: "/substack",
+    redirect: redirect("https://lumaa.substack.com/")
   },
   {
     path: "/email",
