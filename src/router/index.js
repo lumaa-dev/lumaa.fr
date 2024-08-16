@@ -2,7 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import { nextTick } from "vue"
 import HomeView from '../views/HomeView.vue'
 import RedirectView from '@/views/RedirectView.vue';
-import NotFoundView from '@/components/NotFound.vue'
+import NotFoundView from '@/components/NotFound.vue';
 
 const routes = [
   {
@@ -31,8 +31,9 @@ const routes = [
   }
 ]
 
-const redirect = (url) => {
-  return "/redirect?url=" + url
+const redirect = (/**@type {string}*/ url) => {
+  let hasParams = url.includes("?");
+  return "/redirect?url=" + url + `${hasParams ? "&" : "?"}utm_source=lumaa`
 }
 
 const customRedirections = [
@@ -91,7 +92,7 @@ const customRedirections = [
   },
   {
     path: "/email",
-    redirect: redirect("mailto:lumaa@lumaa.fr")
+    redirect: "mailto:lumaa@lumaa.fr"
   }
 ]
 
