@@ -2,6 +2,7 @@
 node_modules
 bun.lockb
 docs/
+*.htaccess
 
 # disabled files
 *.disabled
