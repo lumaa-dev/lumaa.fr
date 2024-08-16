@@ -65,6 +65,7 @@
 					<span class="label">Backrooms Mod</span>
 					<span class="sublabel">2022-2023</span>
 				</div>
+				<p class="sparkles">✨</p>
 			</a>
 			<a href="https://github.com/lumaa-dev/NumMemory" class="br">
 				<div class="labels">
