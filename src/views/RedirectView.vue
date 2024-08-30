@@ -34,13 +34,6 @@ button {
             safeUrl(url) {
                 return url.startsWith("https");
             },
-            addSpecialParam(url) {
-                if (!url.includes("?")) {
-                    return url + "?utm_source=lumaa"
-                } else {
-                    return url + "&utm_source=lumaa"
-                }
-            },
             goBack() {
                 this.$router.push(this.lastRoute)
                 clearTimeout(this.$data.timeout);
@@ -50,7 +43,6 @@ button {
             let url = this.getUrl()
             console.log(url)
             if (url.length < 1 || url == null) this.goBack();
-            url = this.addSpecialParam(url)
             if (!this.safeUrl(url) || url.length < 1) url = "/?error=unknown_unsafe_link";
 
             // this.$data.timeout = setTimeout(() => {
