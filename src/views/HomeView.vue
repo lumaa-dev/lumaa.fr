@@ -19,15 +19,28 @@
 		<div class="sep"></div>
 		<span style="gap: 1em" class="flex">
 			<p class="title">My primary projects:</p>
-			<a href="https://apps.lumaa.fr/app/threaded" class="br"
-				><span class="label">Threaded App</span></a
-			>
+			<a href="https://apps.lumaa.fr/app/threaded" class="br">
+				<div class="labels">
+					<span class="label">Threaded App</span>
+					<span class="sublabel">2023-2024</span>
+				</div>
+			</a>
 			<a href="https://github.com/lumaa-dev/ProboscisKit" class="br"
 				><span class="label">ProboscisKit</span></a
 			>
-			<a href="https://lumaa.fr/tictac" class="br"
-				><span class="label">TicTac App</span></a
-			>
+			<a href="https://modrinth.com/mod/backrooms" class="br">
+				<div class="labels">
+					<span class="label">Backrooms Mod</span>
+					<span class="sublabel">2022-2024</span>
+				</div>
+				<p class="sparkles">✨</p>
+			</a>
+			<a href="https://lumaa.fr/tictac" class="br">
+				<div class="labels">
+					<span class="label">TicTac App</span>
+					<span class="sublabel">2022-2024</span>
+				</div>
+			</a>
 		</span>
 		<div class="sep"></div>
 		<span style="gap: 1em" class="flex">
@@ -60,13 +73,6 @@
 		<div class="sep"></div>
 		<span style="gap: 1em" class="flex">
 			<p class="title">Past projects:</p>
-			<a href="https://modrinth.com/mod/backrooms" class="br">
-				<div class="labels">
-					<span class="label">Backrooms Mod</span>
-					<span class="sublabel">2022-2023</span>
-				</div>
-				<p class="sparkles">✨</p>
-			</a>
 			<a href="https://github.com/lumaa-dev/NumMemory" class="br">
 				<div class="labels">
 					<span class="label">NumMemory App</span>
