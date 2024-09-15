@@ -19,9 +19,9 @@
 		<div class="sep"></div>
 		<span style="gap: 1em" class="flex">
 			<p class="title">My primary projects:</p>
-			<a href="https://apps.lumaa.fr/app/threaded" class="br">
+			<a href="https://apps.lumaa.fr/app/bubble" class="br">
 				<div class="labels">
-					<span class="label">Threaded App</span>
+					<span class="label">Bubble App</span>
 					<span class="sublabel">2023-2024</span>
 				</div>
 			</a>
@@ -72,7 +72,7 @@
 		</span>
 		<div class="sep"></div>
 		<span style="gap: 1em" class="flex">
-			<p class="title">Past projects:</p>
+			<p class="title">Other projects:</p>
 			<a href="https://github.com/lumaa-dev/NumMemory" class="br">
 				<div class="labels">
 					<span class="label">NumMemory App</span>
