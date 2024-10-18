@@ -25,9 +25,10 @@
 					<span class="sublabel">2023-2024</span>
 				</div>
 			</a>
-			<a href="https://github.com/lumaa-dev/ProboscisKit" class="br"
-				><span class="label">ProboscisKit</span></a
-			>
+			<a href="https://github.com/lumaa-dev/ProboscisKit" class="br">
+				<span class="label">ProboscisKit</span>
+				<span class="sublabel">2024</span>
+			</a>
 			<a href="https://modrinth.com/mod/backrooms" class="br">
 				<div class="labels">
 					<span class="label">Backrooms Mod</span>
