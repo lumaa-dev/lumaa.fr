@@ -26,15 +26,16 @@
 				</div>
 			</a>
 			<a href="https://github.com/lumaa-dev/ProboscisKit" class="br">
-				<span class="label">ProboscisKit</span>
-				<span class="sublabel">2024</span>
+				<div class="labels">
+					<span class="label">ProboscisKit</span>
+					<span class="sublabel">2024</span>
+				</div>
 			</a>
 			<a href="https://modrinth.com/mod/backrooms" class="br">
 				<div class="labels">
 					<span class="label">Backrooms Mod</span>
 					<span class="sublabel">2022-2024</span>
 				</div>
-				<p class="sparkles">✨</p>
 			</a>
 			<a href="https://lumaa.fr/tictac" class="br">
 				<div class="labels">
@@ -46,29 +47,59 @@
 		<div class="sep"></div>
 		<span style="gap: 1em" class="flex">
 			<p class="title">Follow me:</p>
-			<router-link to="/mastodon" class="br"
-				><span class="label">Mastodon</span></router-link
-			>
-			<router-link to="/lemmy" class="br"
-				><span class="label">Lemmy</span></router-link
-			>
-			<router-link to="/threads" class="br"
-				><span class="label">Threads</span></router-link
-			>
-			<router-link to="/github" class="br"
-				><span class="label">GitHub</span></router-link
-			>
-			<router-link to="/apps" class="br"
-				><span class="label">Apple Apps</span></router-link
-			>
-			<router-link to="/youtube" class="br"
-				><span class="label">YouTube</span></router-link
-			>
-			<router-link to="/readcv" class="br"
-				><span class="label">read.cv</span></router-link
-			>
+			<router-link to="/mastodon" class="br">
+				<div class="labels">
+					<span class="label">Mastodon</span>
+					<span class="sublabel">@lumaa@techhub.social</span>
+				</div>
+			</router-link>
+			<router-link to="/bluesky" class="br">
+				<div class="labels">
+					<span class="label">Bluesky</span>
+					<span class="sublabel">@lumaa.fr</span>
+				</div>
+			</router-link>
+			<router-link to="/lemmy" class="br">
+				<div class="labels">
+					<span class="label">Lemmy</span>
+					<span class="sublabel">@Lumaa@lemmy.world</span>
+				</div>
+			</router-link>
+			<router-link to="/threads" class="br">
+				<div class="labels">
+					<span class="label">Threads</span>
+					<span class="sublabel">@lumaa_dev</span>
+				</div>
+			</router-link>
+			<router-link to="/github" class="br">
+				<div class="labels">
+					<span class="label">GitHub</span>
+					<span class="sublabel">lumaa_dev</span>
+				</div>
+			</router-link>
+			<router-link to="/apps" class="br">
+				<div class="labels">
+					<span class="label">Apple Apps</span>
+					<span class="sublabel">apps.lumaa.fr</span>
+				</div>
+			</router-link>
+			<router-link to="/youtube" class="br">
+				<div class="labels">
+					<span class="label">YouTube</span>
+					<span class="sublabel">@Lumaa_PRO</span>
+				</div>
+			</router-link>
+			<router-link to="/readcv" class="br">
+				<div class="labels">
+					<span class="label">read.cv</span>
+					<span class="sublabel">read.cv/lumaa</span>
+				</div>
+			</router-link>
 			<router-link to="/substack" class="br">
-				<span class="label">Newsletter</span>
+				<div class="labels">
+					<span class="label">Newsletter</span>
+					<span class="sublabel">lumaa.substack.com</span>
+				</div>
 			</router-link>
 		</span>
 		<div class="sep"></div>

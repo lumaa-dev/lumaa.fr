@@ -37,6 +37,11 @@
 				return l == "fr" || l == "en" ? l : null;
 			},
 		},
+		computed: {
+			buildDate() {
+				return this.$buildDate;
+			}
+		},
 		components: { ErrorModalView },
 	};
 </script>
@@ -49,7 +54,7 @@
 	<div class="footer">
 		<p>
 			{{
-				"/* © Lumaa 2022-[now] */".replace("[now]", new Date().getFullYear())
+				"/* © Lumaa 2022—[now] | Built on [build] */".replace("[now]", new Date().getFullYear()).replace("[build]", buildDate)
 			}}
 		</p>
 	</div>

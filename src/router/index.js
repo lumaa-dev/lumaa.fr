@@ -70,6 +70,10 @@ const customRedirections = [
     redirect: redirect("https://techhub.social/@lumaa")
   },
   {
+    path: "/bluesky",
+    redirect: redirect("https://bsky.app/profile/lumaa.fr")
+  },
+  {
     path: "/threads",
     redirect: redirect("https://threads.net/@lumaa_dev")
   },
