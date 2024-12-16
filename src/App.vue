@@ -37,11 +37,6 @@
 				return l == "fr" || l == "en" ? l : null;
 			},
 		},
-		computed: {
-			buildDate() {
-				return this.$buildDate;
-			}
-		},
 		components: { ErrorModalView },
 	};
 </script>
@@ -54,7 +49,7 @@
 	<div class="footer">
 		<p>
 			{{
-				"/* © Lumaa 2022—[now] | Built on [build] */".replace("[now]", new Date().getFullYear()).replace("[build]", buildDate)
+				"/* © Lumaa 2022—[now] */".replace("[now]", new Date().getFullYear())
 			}}
 		</p>
 	</div>
@@ -142,6 +137,12 @@
 		flex-direction: row;
 		justify-content: flex-start;
 		align-items: center;
+	}
+
+	a.br .label img {
+		width: 50px;
+		margin: 0 18px 0 0;
+		border-radius: 22%;
 	}
 
 	a.br .sublabel,

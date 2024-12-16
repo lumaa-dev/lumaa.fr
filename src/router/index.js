@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import { nextTick } from "vue"
 import HomeView from '../views/HomeView.vue'
+import WrappedView from '@/views/WrappedView.vue';
 import RedirectView from '@/views/RedirectView.vue';
 import NotFoundView from '@/components/NotFound.vue';
 
@@ -20,6 +21,14 @@ const routes = [
       title: "Redirecting..."
     },
     component: RedirectView
+  },
+  {
+    path: "/wrapped",
+    name: "wrapped",
+    meta: {
+      title: "Lumaa Wrapped"
+    },
+    component: WrappedView
   },
   {
     path: '/:pathMatch(.*)',
