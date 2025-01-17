@@ -17,12 +17,6 @@
 			<p>Proudly French</p>
 		</span>
 		<div class="sep"></div>
-		<router-link to="/wrapped" class="br">
-			<div class="labels">
-				<span class="label">Wrapped 2024</span>
-			</div>
-		</router-link>
-		<div class="sep"></div>
 		<span style="gap: 1em" class="flex">
 			<p class="title">My primary projects:</p>
 			<a href="https://apps.lumaa.fr/app/bubble" class="br">
