@@ -104,8 +104,8 @@ const customRedirections = [
     redirect: redirect("https://lumaa.substack.com/")
   },
   {
-    path: "/email",
-    redirect: "mailto:lumaa@lumaa.fr"
+    path: "/apps",
+    redirect: redirect("https://apps.lumaa.fr/")
   }
 ]
 
