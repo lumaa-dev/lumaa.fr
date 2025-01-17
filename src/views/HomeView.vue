@@ -22,7 +22,7 @@
 			<a href="https://apps.lumaa.fr/app/bubble" class="br">
 				<div class="labels">
 					<span class="label">Bubble App</span>
-					<span class="sublabel">2023-2024</span>
+					<span class="sublabel">2023-2025</span>
 				</div>
 			</a>
 			<a href="https://github.com/lumaa-dev/ProboscisKit" class="br">
