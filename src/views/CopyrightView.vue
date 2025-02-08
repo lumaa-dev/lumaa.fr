@@ -27,9 +27,7 @@
 			<p class="title">Projects:</p>
 			<router-link to="/vfast" class="br">
 				<div class="labels">
-					<span class="label">
-                        © ProboscisKit 2024-{{ new Date().getFullYear() }}
-                    </span>
+					<span class="label">© ProboscisKit 2024-{{ new Date().getFullYear() }}</span>
 				</div>
 			</router-link>
             <a href="https://github.com/lumaa-dev/DesirePath" class="br">
@@ -37,11 +35,11 @@
 					<span class="label">© Desire Path 2024</span>
 				</div>
 			</a>
-            <router-link to="/apps" class="br">
+            <a href="https://apps.lumaa.fr/legal/copyrights?utm_source=lumaa" class="br">
 				<div class="labels">
 					<span class="label">App Copyrights</span>
 				</div>
-			</router-link>
+			</a>
 		</span>
 	</span>
 </template>

@@ -1,49 +1,66 @@
 <template>
-	<div class="sep"></div>
 	<span class="flex">
-		<img
-			src="../assets/hero/icon_white.svg"
-			alt="Lumaa icon"
-			class="brand"
-			draggable="false"
-		/>
-		<p class="title">Lumaa</p>
-		<div class="sep"></div>
-		<span style="gap: 1em" class="flex">
-			<p>
-				Indie developer since 2021:<br />Swift, JavaScript / Node.JS, Java, and
-				others
-			</p>
-			<p>Proudly French</p>
-		</span>
-		<div class="sep"></div>
-		<span style="gap: 1em" class="flex">
-			<p class="title">My primary projects:</p>
-			<a href="https://apps.lumaa.fr/app/bubble" class="br">
-				<div class="labels">
-					<span class="label">Bubble App</span>
-					<span class="sublabel">2023-2025</span>
+		<div class="sectionized leftright fill directed">
+			<img
+				src="../assets/hero/hero_wwdc24.jpg"
+				alt="Lumaa icon"
+				class="brand"
+				draggable="false"
+			/>
+			<div class="text">
+				<p class="title">Lumaa</p>
+				<p>Indie developer since 2021<br /><br />iOS Dev, node.js, Swift, Java, TypeScript, CSS, HTML, JavaScript... and hopefully more!</p>
+			</div>
+		</div>
+		<div class="cta sectionized app">
+			<div class="rightleft fill directed" id="projects">
+				<img src="../assets/projects/rl_filled.png" alt="Record Link app icon" />
+				<div class="text">
+					<p class="title">Record Link</p>
+					<p>Record Link is an upcoming service to link your friends' and family's music streaming services all together in one singular service.<br /><br />Currently in Alpha testing, planned released in 2025 with <a href="https://spotify.com">Spotify</a>® or <a href="https://apple.com/music">Apple Music</a>® integrations</p>
 				</div>
+			</div>
+			<a href="https://apps.lumaa.fr/app/recordlink" class="br">
+				<span class="label">Learn more</span>
 			</a>
-			<a href="https://github.com/lumaa-dev/ProboscisKit" class="br">
-				<div class="labels">
-					<span class="label">ProboscisKit</span>
-					<span class="sublabel">2024</span>
+		</div>
+		<div class="cta sectionized bubble">
+			<div class="leftright fill directed" id="projects">
+				<img src="../assets/projects/bubble_heroicon.png" alt="Bubble app icon" />
+				<div class="text">
+					<p class="title">Bubble</p>
+					<p>Bubble is a <a href="https://joinmastodon.org/">Mastodon</a> client that is simple and easy-to-use.<br /><br />It has all the primary Mastodon features for free, and includes Bubble+ for additional features like a Content Filter, Account Metrics, and much more...</p>
 				</div>
+			</div>
+			<a href="https://lumaa.fr/bubble" class="br">
+				<span class="label">Learn more</span>
 			</a>
+		</div>
+		
+		<div class="cta sectionized app">
+			<div class="rightleft fill directed" id="projects">
+				<img src="../assets/projects/fraca_herodark.png" alt="Fraca app icon" />
+				<div class="text">
+					<p class="title">Fraca</p>
+					<p>Fraca is a handy app available on all Apple devices, made for Canadians going to France or French people going to Canada.<br /><br />It includes an exchange rate from Euro to Canadian dollars, a tax calculator, and all imperial - metrics conversions.</p>
+				</div>
+			</div>
+			<a href="https://d.lumaa.fr/fraca" class="br">
+				<span class="label">View in the App Store</span>
+			</a>
+		</div>
+		<div class="cta sectionized bkrm">
+			<div class="leftright fill directed" id="projects">
+				<img src="../assets/projects/bkrm_autotransp.png" alt="BackroomsMod app icon" />
+				<div class="text">
+					<p class="title">Backrooms</p>
+					<p>The Backrooms Mod is a Minecraft Fabric mod in 1.21.1, made to add the legendary world of The Backrooms in your Minecraft world.<br /><br />Experience the Level 0's monochromatic yellow wallpaper and buzzing light in an original cubic style...</p>
+				</div>
+			</div>
 			<a href="https://modrinth.com/mod/backrooms" class="br">
-				<div class="labels">
-					<span class="label">Backrooms Mod</span>
-					<span class="sublabel">2022-2024</span>
-				</div>
+				<span class="label">Modrinth</span>
 			</a>
-			<a href="https://lumaa.fr/tictac" class="br">
-				<div class="labels">
-					<span class="label">TicTac App</span>
-					<span class="sublabel">2022-2024</span>
-				</div>
-			</a>
-		</span>
+		</div>
 		<div class="sep"></div>
 		<span style="gap: 1em" class="flex">
 			<p class="title">Follow me:</p>
@@ -65,12 +82,6 @@
 					<span class="sublabel">@Lumaa@lemmy.world</span>
 				</div>
 			</router-link>
-			<router-link to="/threads" class="br">
-				<div class="labels">
-					<span class="label">Threads</span>
-					<span class="sublabel">@lumaa_dev</span>
-				</div>
-			</router-link>
 			<router-link to="/github" class="br">
 				<div class="labels">
 					<span class="label">GitHub</span>
@@ -89,12 +100,6 @@
 					<span class="sublabel">@Lumaa_PRO</span>
 				</div>
 			</router-link>
-			<router-link to="/readcv" class="br">
-				<div class="labels">
-					<span class="label">read.cv</span>
-					<span class="sublabel">read.cv/lumaa</span>
-				</div>
-			</router-link>
 			<router-link to="/substack" class="br">
 				<div class="labels">
 					<span class="label">Newsletter</span>
@@ -104,7 +109,7 @@
 		</span>
 		<div class="sep"></div>
 		<span style="gap: 1em" class="flex">
-			<p class="title">Other projects:</p>
+			<p class="title">Older stuff:</p>
 			<a href="https://github.com/lumaa-dev/NumMemory" class="br">
 				<div class="labels">
 					<span class="label">NumMemory App</span>
@@ -152,8 +157,9 @@
 	}
 
 	.title {
-		font-size: 2em;
-		padding: 1em;
+		font-size: 4em;
+		font-weight: 900;
+		font-family: var(--font-expanded);
 	}
 
 	.c {
@@ -163,5 +169,96 @@
 
 	.br:not(a.br, button.br) {
 		height: 80vh;
+	}
+
+	.fill {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.fill:not(.cta > .fill) {
+		height: 80vh;
+	}
+
+	.cta > .fill {
+		padding: 24vh 0 14vh 0;
+	}
+
+	.directed {
+		width: 100vw;
+		gap: 10vw;
+	}
+
+	.leftright img, .rightleft img {
+		width: 350px;
+	}
+
+	.leftright .text, .rightleft .text {
+		width: 40vw;
+	}
+
+	.leftright {
+		flex-direction: row;
+		text-align: left;
+	}
+
+	.rightleft {
+		flex-direction: row-reverse;
+		text-align: left;
+	}
+
+	.sectionized {
+		border-bottom: 0.5px solid #ffffff6d;
+	}
+
+	.cta {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding-bottom: calc(24vh - 14vh);
+	}
+
+	.bubble {
+		background: linear-gradient(to bottom, #222222, #101010);
+	}
+
+	.app {
+		background: #1c1c1e;
+	}
+
+	.bkrm {
+		background: linear-gradient(to bottom, #51b3cc, #0094bf);
+	}
+
+	@media screen and (max-width: 850px) {
+		.title {
+			font-size: 9vw;
+		}
+		.fill:not(.cta > .fill) {
+			height: 90vh;
+		}
+
+		.cta {
+			padding-bottom: 10vh;
+
+		}
+
+		.cta > .fill {
+			padding: 6vh 0 8vh 0;
+		}
+
+		.rightleft, .leftright {
+			flex-direction: column;
+		}
+
+		.rightleft img, .leftright img {
+			width: 250px;
+		}
+
+		.rightleft .text, .leftright .text {
+			width: 90vw;
+		}
 	}
 </style>

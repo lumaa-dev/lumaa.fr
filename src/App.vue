@@ -59,15 +59,19 @@
 	@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap");
 
 	@font-face {
-		font-family: "SF Mono";
-		src: url("./assets/SFMonoRegular.otf");
+		font-family: "Moderniz";
+		src: url('./assets/fonts/Moderniz.otf');
+	}
+
+	@font-face {
+		font-family: "Salma";
+		src: url('./assets/fonts/SalmaAlfasans-Light.otf');
 	}
 
 	:root {
 		--background: #000;
 		--outline: #1e1e1e;
 		--brand: #f8bd4a;
-		--bkrm: #222fd5;
 		--warn: #ffcc00;
 
 		--x-keyword: #dabaff;
@@ -76,9 +80,13 @@
 		--x-var: #78c2b3;
 		--x-int: #d0bf69;
 
-		--font: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+		--font-expanded: "Moderniz", "Salma", system-ui, -apple-system, BlinkMacSystemFont, "SF Pro", "Segoe UI", Roboto,
+		Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+
+		--font: "Salma", system-ui, -apple-system, BlinkMacSystemFont, "SF Pro", "Segoe UI", Roboto,
 			Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-		--font-mono: "SF Mono", "Consolas", "JetBrains Mono", monospace;
+
+		--font-mono: "JetBrains Mono", "Consolas", monospace;
 
 		--btn-transition: background 150ms ease-out;
 	}
@@ -91,6 +99,8 @@
 		max-width: 100vw;
 		white-space: pre-wrap;
 		word-wrap: break-word;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
 	}
 
 	p > a {
@@ -106,7 +116,7 @@
 		flex-direction: row;
 		align-items: center;
 		justify-content: space-between;
-		background: var(--background);
+		background: #00000000;
 		color: #fff;
 		aspect-ratio: 250 / 52.3;
 		width: 360px;
@@ -204,12 +214,6 @@
 		padding: 5vh;
 	}
 
-	* {
-		padding: 0;
-		margin: 0;
-		box-sizing: border-box;
-	}
-
 	/* --------------- */
 
 	#app {
@@ -223,18 +227,25 @@
 	body {
 		background: var(--background);
 		font-weight: 700;
+		max-width: 100vw;
+		overflow: hidden scroll;
 	}
 
-	a,
+	a:not(:has(*)),
 	button {
 		color: #5482ff;
 		cursor: pointer;
 		text-decoration: none;
 	}
 
-	a:hover,
+	a:not(:has(*)):hover,
 	button:hover {
 		text-decoration: underline;
+	}
+
+	a:has(*) {
+		color: inherit;
+		text-decoration: inherit;
 	}
 
 	.keyword {
@@ -261,10 +272,6 @@
 		text-align: right;
 		font-size: 0.8em;
 		font-family: var(--font-mono);
-	}
-
-	img.brand {
-		width: 5vw;
 	}
 
 	/* --- MOBILE --- */

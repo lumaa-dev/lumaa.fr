@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import { nextTick } from "vue"
 import HomeView from '../views/HomeView.vue'
 import WrappedView from '@/views/WrappedView.vue';
+import CopyrightView from '@/views/CopyrightView.vue';
 import RedirectView from '@/views/RedirectView.vue';
 import NotFoundView from '@/components/NotFound.vue';
 
@@ -29,6 +30,14 @@ const routes = [
       title: "Lumaa Wrapped"
     },
     component: WrappedView
+  },
+  {
+    path: "/copyright",
+    name: "copyright",
+    meta: {
+      title: "Lumaa - Copyrights"
+    },
+    component: CopyrightView
   },
   {
     path: '/:pathMatch(.*)',
@@ -83,10 +92,6 @@ const customRedirections = [
     redirect: redirect("https://bsky.app/profile/lumaa.fr")
   },
   {
-    path: "/threads",
-    redirect: redirect("https://threads.net/@lumaa_dev")
-  },
-  {
     path: "/v-fast",
     alias: "/vfast",
     redirect: redirect("https://github.com/v-fast")
@@ -94,10 +99,6 @@ const customRedirections = [
   {
     path: "/modrinth",
     redirect: redirect("https://modrinth.com/user/Lumaa")
-  },
-  {
-    path: "/readcv",
-    redirect: redirect("https://read.cv/lumaa")
   },
   {
     path: "/substack",
