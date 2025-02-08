@@ -100,6 +100,12 @@
 					<span class="sublabel">@Lumaa_PRO</span>
 				</div>
 			</router-link>
+			<router-link to="/discord">
+				<div class="labels">
+					<span class="label">Discord 🇫🇷</span>
+					<span class="sublabel">Pour Twitch</span>
+				</div>
+			</router-link>
 			<router-link to="/substack" class="br">
 				<div class="labels">
 					<span class="label">Newsletter</span>

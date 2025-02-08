@@ -107,6 +107,10 @@ const customRedirections = [
   {
     path: "/apps",
     redirect: redirect("https://apps.lumaa.fr/")
+  },
+  {
+    path: "/discord",
+    redirect: redirect("https://discord.gg/PdsbEddYbc")
   }
 ]
 
