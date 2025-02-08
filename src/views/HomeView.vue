@@ -100,7 +100,7 @@
 					<span class="sublabel">@Lumaa_PRO</span>
 				</div>
 			</router-link>
-			<router-link to="/discord">
+			<router-link to="/discord" class="br">
 				<div class="labels">
 					<span class="label">Discord 🇫🇷</span>
 					<span class="sublabel">Pour Twitch</span>
