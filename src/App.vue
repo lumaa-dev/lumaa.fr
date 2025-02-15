@@ -47,11 +47,7 @@
 		<router-view />
 	</div>
 	<div class="footer">
-		<p>
-			{{
-				"/* © Lumaa 2022—[now] */".replace("[now]", new Date().getFullYear())
-			}}
-		</p>
+		<p>/* <router-link to="/copyright">©</router-link> Lumaa 2022—{{ new Date().getFullYear() }} */</p>
 	</div>
 </template>
 
@@ -248,6 +244,12 @@
 		text-decoration: inherit;
 	}
 
+	.title {
+		font-size: 4em;
+		font-weight: 900;
+		font-family: var(--font-expanded);
+	}
+
 	.keyword {
 		color: var(--x-keyword);
 	}
@@ -277,6 +279,10 @@
 	/* --- MOBILE --- */
 
 	@media screen and (max-width: 850px) {
+		.title {
+			font-size: 9vw;
+		}
+		
 		.mob-hide {
 			display: none !important;
 		}
