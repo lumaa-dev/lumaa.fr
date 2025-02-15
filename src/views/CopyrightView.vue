@@ -4,10 +4,10 @@
 		<img
 			src="../assets/hero/icon_white.svg"
 			alt="Lumaa icon"
-			class="brand"
+			class="worker"
 			draggable="false"
 		/>
-		<p class="title">© Lumaa 2022-{{ new Date().getFullYear() }}</p>
+		<p class="special title">© Lumaa 2022-{{ new Date().getFullYear() }}</p>
 		<div class="sep"></div>
 		<span style="gap: 1em" class="flex">
 			<p>Copyrights owned by "Lumaa"</p>
@@ -17,22 +17,30 @@
 			<p class="title">Groups:</p>
 			<router-link to="/vfast" class="br">
 				<div class="labels">
-					<span class="label">
-                        © V-Fast 2023-{{ new Date().getFullYear() }}
-                    </span>
+					<span class="label">V-Fast</span>
+					<span class="sublabel">© V-Fast 2023-{{ new Date().getFullYear() }}</span>
 				</div>
 			</router-link>
 		</span>
+		<div class="sep"></div>
         <span style="gap: 1em" class="flex">
 			<p class="title">Projects:</p>
 			<router-link to="/vfast" class="br">
 				<div class="labels">
-					<span class="label">© ProboscisKit 2024-{{ new Date().getFullYear() }}</span>
+					<span class="label">ProboscisKit</span>
+					<span class="sublabel">© Lumaa 2024</span>
 				</div>
 			</router-link>
             <a href="https://github.com/lumaa-dev/DesirePath" class="br">
 				<div class="labels">
-					<span class="label">© Desire Path 2024</span>
+					<span class="label">Desire Path</span>
+					<span class="sublabel">© Lumaa 2024</span>
+				</div>
+			</a>
+			<a href="https://apps.lumaa.fr/app/recordlink" class="br">
+				<div class="labels">
+					<span class="label">Record Link</span>
+					<span class="sublabel">© Lumaa 2024-2025</span>
 				</div>
 			</a>
             <a href="https://apps.lumaa.fr/legal/copyrights?utm_source=lumaa" class="br">
@@ -56,14 +64,18 @@ span.m {
 	height: 85vh;
 }
 
-.title {
-	font-size: 2em;
-	padding: 1em;
-}
-
 .c {
 	font-size: 1.75em;
 	font-weight: 500;
+}
+
+.special {
+	font-size: 2em;
+	padding: 2em 0;
+}
+
+.worker {
+	width: 10%;
 }
 
 .br:not(a.br, button.br) {
