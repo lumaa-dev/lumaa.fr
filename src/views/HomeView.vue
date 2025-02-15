@@ -9,18 +9,18 @@
 			/>
 			<div class="text">
 				<p class="title">Lumaa</p>
-				<p>Indie developer since 2021<br /><br />iOS Dev, node.js, Swift, Java, TypeScript, CSS, HTML, JavaScript... and hopefully more!</p>
+				<p>Indie developer since 2021<br /><br />iOS Dev, node.js, Swift, Java, TypeScript, CSS, HTML, Vue.js, JavaScript... and hopefully more!</p>
 			</div>
 		</div>
-		<div class="cta sectionized app">
+		<div class="cta sectionized cider">
 			<div class="rightleft fill directed" id="projects">
-				<img src="../assets/projects/rl_filled.png" alt="Record Link app icon" />
+				<img src="../assets/cider-icon.png" alt="Cider icon" />
 				<div class="text">
-					<p class="title">Record Link</p>
-					<p>Record Link is an upcoming service to link your friends' and family's music streaming services all together in one singular service.<br /><br />Currently in Alpha testing, planned released in 2025 with <a href="https://spotify.com">Spotify</a>® or <a href="https://apple.com/music">Apple Music</a>® integrations</p>
+					<p class="title">Cider Remote</p>
+					<p><a href="https://d.lumaa.fr/bnlhga">Cider Remote</a> is a native iOS app used to control a <a href="https://cider.sh/">Cider</a> instance seemlessly in real-time. Cider is an <a href="https://apple.com/music">Apple Music</a>® client made by Cider Collective.<br /><br />Starting by making <a href="https://github.com/ciderapp/Cider-Remote/pulls">GitHub pull requests</a>, I am now volunteering for Cider Collective on Cider Remote, adding the most requested features like the queueing system.</p>
 				</div>
 			</div>
-			<a href="https://apps.lumaa.fr/app/recordlink" class="br">
+			<a href="https://d.lumaa.fr/bnlhga" class="br">
 				<span class="label">Learn more</span>
 			</a>
 		</div>
@@ -42,7 +42,7 @@
 				<img src="../assets/projects/fraca_herodark.png" alt="Fraca app icon" />
 				<div class="text">
 					<p class="title">Fraca</p>
-					<p>Fraca is a handy app available on all Apple devices, made for Canadians going to France or French people going to Canada.<br /><br />It includes an exchange rate from Euro to Canadian dollars, a tax calculator, and all imperial - metrics conversions.</p>
+					<p>Fraca is a handy and simple app available on all Apple devices, made for Canadians going to France or French people going to Canada.<br /><br />It includes an exchange rate from Euro to Canadian dollars, a tax calculator, and all imperial - metrics conversions.</p>
 				</div>
 			</div>
 			<a href="https://d.lumaa.fr/fraca" class="br">
@@ -54,16 +54,34 @@
 				<img src="../assets/projects/bkrm_autotransp.png" alt="BackroomsMod app icon" />
 				<div class="text">
 					<p class="title">Backrooms</p>
-					<p>The Backrooms Mod is a Minecraft Fabric mod in 1.21.1, made to add the legendary world of The Backrooms in your Minecraft world.<br /><br />Experience the Level 0's monochromatic yellow wallpaper and buzzing light in an original cubic style...</p>
+					<p>Find yourself the #1 Backrooms mod on Modrinth, adding the legendary world of The Backrooms in Minecraft.<br /><br />Don't get too crazy from the Level 0's buzzing lights, and the entity's hums behind the wall next to you...</p>
 				</div>
 			</div>
 			<a href="https://modrinth.com/mod/backrooms" class="br">
 				<span class="label">Modrinth</span>
 			</a>
 		</div>
+		<div class="cta sectionized app">
+			<div class="rightleft fill directed">
+				<img src="../assets/projects/tictac_transp.png" alt="TicTac icon" />
+				<div class="text">
+					<p class="title">TicTac</p>
+					<p>TicTac is the very first app I published on the App Store in October 2023, making reminders, countdowns and tasks an easy thing to utilize on your iPhone or iPad.<br /><br />TicTac v2 is a W.I.P. update changing every aspect of the app, coming later in 2025.</p>
+				</div>
+			</div>
+			<a href="https://apps.apple.com/us/app/tictac/id6468402716" class="br">
+				<span class="label">View in the App Store</span>
+			</a>
+		</div>
 		<div class="sep"></div>
 		<span style="gap: 1em" class="flex">
 			<p class="title">Follow me:</p>
+			<router-link to="/apps" class="br">
+				<div class="labels">
+					<span class="label">Apple Apps</span>
+					<span class="sublabel">apps.lumaa.fr</span>
+				</div>
+			</router-link>
 			<router-link to="/mastodon" class="br">
 				<div class="labels">
 					<span class="label">Mastodon</span>
@@ -86,12 +104,6 @@
 				<div class="labels">
 					<span class="label">GitHub</span>
 					<span class="sublabel">lumaa_dev</span>
-				</div>
-			</router-link>
-			<router-link to="/apps" class="br">
-				<div class="labels">
-					<span class="label">Apple Apps</span>
-					<span class="sublabel">apps.lumaa.fr</span>
 				</div>
 			</router-link>
 			<router-link to="/youtube" class="br">
@@ -162,12 +174,6 @@
 		height: 85vh;
 	}
 
-	.title {
-		font-size: 4em;
-		font-weight: 900;
-		font-family: var(--font-expanded);
-	}
-
 	.c {
 		font-size: 1.75em;
 		font-weight: 500;
@@ -185,7 +191,7 @@
 	}
 
 	.fill:not(.cta > .fill) {
-		height: 80vh;
+		height: 88vh;
 	}
 
 	.cta > .fill {
@@ -226,6 +232,14 @@
 		padding-bottom: calc(24vh - 14vh);
 	}
 
+	.cider {
+		background: #0c0a09;;
+	}
+
+	.cider a:not(.br) {
+		color: #e11d48;
+	}
+
 	.bubble {
 		background: linear-gradient(to bottom, #222222, #101010);
 	}
@@ -239,9 +253,6 @@
 	}
 
 	@media screen and (max-width: 850px) {
-		.title {
-			font-size: 9vw;
-		}
 		.fill:not(.cta > .fill) {
 			height: 90vh;
 		}
