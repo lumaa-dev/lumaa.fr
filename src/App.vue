@@ -96,7 +96,7 @@
 		white-space: pre-wrap;
 		word-wrap: break-word;
 		-webkit-font-smoothing: antialiased;
-		-moz-osx-font-smoothing: grayscale;
+		-moz-osx-font-smoothing: antialiased;
 	}
 
 	p > a {
@@ -242,6 +242,10 @@
 	a:has(*) {
 		color: inherit;
 		text-decoration: inherit;
+	}
+
+	.mono {
+		font-family: var(--font-mono);
 	}
 
 	.title {
