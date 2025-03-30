@@ -166,18 +166,6 @@
 		</span>
 		<div class="sep"></div>
 		<span style="gap: 1em" class="flex">
-			<p class="title">Last post:</p>
-			<iframe
-				:src="`https://techhub.social/@lumaa/${lastMastodonId}/embed`"
-				width="460"
-				height="422"
-				allow="fullscreen"
-				sandbox="allow-scripts allow-same-origin allow-popups"
-				style="border: 0px; overflow: hidden; display: block"
-			></iframe>
-		</span>
-		<div class="sep"></div>
-		<span style="gap: 1em" class="flex">
 			<p class="title">Older stuff:</p>
 			<a href="https://github.com/lumaa-dev/NumMemory" class="br">
 				<div class="labels">
