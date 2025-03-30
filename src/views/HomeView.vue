@@ -1,19 +1,24 @@
 <template>
 	<span class="flex">
-		<div class="sectionized leftright fill directed">
-			<img
-				src="../assets/hero/hero_wwdc24.jpg"
-				alt="Lumaa icon"
-				class="brand"
-				draggable="false"
-			/>
-			<div class="text">
-				<p class="title">Lumaa</p>
-				<p>
-					Indie developer since 2021<br /><br />iOS Dev, node.js, Swift, Java,
-					TypeScript, CSS, HTML, Vue.js, JavaScript... and hopefully more!
-				</p>
+		<div class="cta sectionized">
+			<div class="leftright fill directed">
+				<img
+					src="../assets/hero/hero_wwdc24.jpg"
+					alt="Lumaa icon"
+					class="brand"
+					draggable="false"
+				/>
+				<div class="text">
+					<p class="title">Lumaa</p>
+					<p>
+						Indie developer since 2021<br /><br />iOS Dev, node.js, Swift, Java,
+						TypeScript, CSS, HTML, Vue.js, JavaScript... and hopefully more!
+					</p>
+				</div>
 			</div>
+			<router-link to="/about" class="br">
+				<span class="label">About Me</span>	
+			</router-link>
 		</div>
 		<div class="cta sectionized cider">
 			<div class="rightleft fill directed" id="projects">
