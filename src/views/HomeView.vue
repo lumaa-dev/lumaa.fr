@@ -76,8 +76,8 @@
 					</p>
 				</div>
 			</div>
-			<a href="https://d.lumaa.fr/fraca" class="br">
-				<span class="label">View in the App Store</span>
+			<a href="https://apps.lumaa.fr/app/fraca" class="br">
+				<span class="label">Learn more</span>
 			</a>
 		</div>
 		<div class="cta sectionized bkrm">
