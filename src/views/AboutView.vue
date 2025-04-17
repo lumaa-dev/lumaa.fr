@@ -7,12 +7,23 @@
                 Developer since 2021, I am a passionate developer in my free time, and a student called <span class="mono">Nathan</span> at others.
             </div>
         </div>
-        <span id="skills">
+        <span id="toc">
+            <div class="sectionized directed">
+                <p class="title">Table of Content</p>
+                <span class="flex">
+                    <a href="#toc" class="br"><span class="label">Table of Content</span></a>
+                    <a href="#cskills" class="br"><span class="label">Coding Skills</span></a>
+                    <a href="#vskills" class="br"><span class="label">Videography</span></a>
+                    <a href="#perso" class="br"><span class="label">Personal Life</span></a>
+                </span>
+            </div>
+        </span>
+        <span id="cskills">
             <div class="sectionized rightleft fill directed">
                 <img src="../assets/portfolio/wrench.and.screwdriver.svg" alt="Wrench and Screwdriver icon" class="high" draggable="false"/>
                 <div class="text">
-                    <div class="title"><b>Skills</b></div>
-                    Because sometimes, all you need to know is what I can achieve. All while keeping a correct personal and "professional" lifestyle.
+                    <div class="title"><b>Coding Skills</b></div>
+                    Because sometimes, all you need to know is what I can achieve in a terminal (or command prompt whatever). And that's just coding.
                 </div>
             </div>
             <div class="sectionized leftright fill directed">
@@ -42,6 +53,59 @@
                     <div class="title"><b>Web</b></div>
                     Making websites is where I started "coding", by replicating the <a href="https://discord.com/">Discord</a> interface and primary features without a server, everything locally... Turns out I'm pretty good now.
                 </div>
+            </div>
+        </span>
+        <span id="vskills">
+            <div class="sectionized rightleft fill directed">
+                <img src="../assets/portfolio/youtube.png" alt="YouTube icon" draggable="false"/>
+                <div class="text">
+                    <div class="title"><b>Videography</b></div>
+                    I mostly work at 25 fps in 1080p, but sometimes it can be vertical for YouTube Shorts... But most of the elements below are made for horizontal videos.
+                </div>
+            </div>
+            <div class="sectionized leftright fill directed">
+                <img src="../assets/portfolio/blender.png" alt="Blender icon" draggable="false"/>
+                <div class="text">
+                    <div class="title"><b>Blender</b></div>
+                    I use Blender for moving objects in a 3 dimensional environment, yeah that's what it's for... But yeah I make cool 3D animations with iPhones and Macs up and down, left and right...
+                </div>
+            </div>
+            <div class="sectionized leftright fill directed">
+                <img src="../assets/portfolio/fcpx.png" alt="Final Cut Pro icon" draggable="false"/>
+                <div class="text">
+                    <div class="title"><b>Final Cut Pro</b></div>
+                    Editing is such a pain but Final Cut Pro makes it better, but sometimes the project file gets a little too big for my computer... But hey I love it.
+                </div>
+            </div>
+            <div class="sectionized leftright fill directed">
+                <img src="../assets/portfolio/ae.png" alt="After Effects icon" draggable="false"/>
+                <div class="text">
+                    <div class="title"><b>Adobe AE</b></div>
+                    I started in April 2025 to learn how to use the potential of After Effects and I've been learning pretty quickly, gladly, even though this software is a plane pilot's domain.
+                </div>
+            </div>
+        </span>
+        <span id="perso">
+            <div class="sectionized rightleft fill directed">
+                <img src="../assets/portfolio/perso.jpg" alt="Nathan persona" draggable="false"/>
+                <div class="text">
+                    <div class="title"><b>Personal Life</b></div>
+                    When I mean "personal life" I'm not gonna reveal my entire life... Chill out... I'm just gonna point out the evident stuff. Pixel art by Kairi
+                </div>
+            </div>
+            <div class="sectionized rightleft fill directed">
+                <div class="text">
+                    <div class="title">Music</div>
+                    Of course, French YouTuber, musician and singer <a href="https://feldup.bandcamp.com/">Feldup</a>! Mostly his latest album <a href="https://bfan.link/stared-at-from-a-distance">Stared at from a Distance</a>. It's a very cool rock album about the musician's deepest trauma, go listen to it.<br/><br/>Other stuff I listen to is <a href="https://youtu.be/GnF4fvJZjQc">James Marriott</a>, a very talented artist that has been growing a lot in the past few years... And OF COURSE: <a href="https://www.radiohead.com/library">Radiohead</a>.
+                </div>
+                <iframe style="border: 0; width: 350px; height: 470px;" src="https://bandcamp.com/EmbeddedPlayer/album=959054129/size=large/bgcol=333333/linkcol=0f91ff/tracklist=false/transparent=true/" seamless><a href="https://feldup.bandcamp.com/album/stared-at-from-a-distance-2">Stared at from a Distance by Feldup</a></iframe>
+            </div>
+            <div class="sectionized rightleft fill directed">
+                <div class="text">
+                    <div class="title">Vinyls</div>
+                    Along with <a href="https://bfan.link/stared-at-from-a-distance">Stared at from a Distance</a>, I own 9 vinyls, that can be found on my <a href="https://d.lumaa.fr/vinyl">Discogs</a> account, that I buy from my own pocket at my local <a href="https://en.wikipedia.org/wiki/Fnac">Fnac</a> store.
+                </div>
+                <img src="../assets/portfolio/vinyl.png" alt="Stared at from a Distance vinyl" draggable="false" />
             </div>
         </span>
         <router-link to="/" class="br space">
@@ -104,6 +168,18 @@
 	.sectionized {
 		border-bottom: 0.5px solid #ffffff6d;
 	}
+
+    .sectionized:not(.sectionized.fill) {
+        padding: 10em 0;
+    }
+
+    .sectionized:not(.sectionized.fill) > .title {
+        margin: 1em 0;
+    }
+
+    .sectionized span.flex {
+        gap: 10px;
+    }
 
     .space {
         margin: 50px 0;
