@@ -10,10 +10,7 @@
 				/>
 				<div class="text">
 					<p class="title">Lumaa</p>
-					<p>
-						Indie developer since 2021<br /><br />iOS Dev, node.js, Swift, Java,
-						TypeScript, CSS, HTML, Vue.js, JavaScript... and hopefully more!
-					</p>
+					<p>Remote Team Lead @ <a href="https://cider.sh/">Cider Collective</a> since May 2025<br /><br />Indie developer since forever, a lot of active projects, most of which are open-source.</p>
 				</div>
 			</div>
 			<router-link to="/about" class="br">
@@ -22,54 +19,28 @@
 		</div>
 		<div class="cta sectionized cider">
 			<div class="rightleft fill directed" id="projects">
-				<img src="../assets/cider-icon.png" alt="Cider icon" />
+				<img src="../assets/cider-icon.png" alt="Cider icon" draggable="false"/>
 				<div class="text">
 					<p class="title">Cider Remote</p>
 					<p>
-						<a href="https://d.lumaa.fr/bnlhga">Cider Remote</a> is a native iOS
+						<a href="https://apps.lumaa.fr/app/remote">Cider Remote</a> is a native iOS
 						app used to control a <a href="https://cider.sh/">Cider</a> instance
-						seemlessly in real-time. Cider is an
-						<a href="https://apple.com/music">Apple Music</a>® client made by
-						Cider Collective.<br /><br />Starting by making
-						<a href="https://github.com/ciderapp/Cider-Remote/pulls"
-							>GitHub pull requests</a
-						>, I am now volunteering for Cider Collective on Cider Remote,
-						adding the most requested features like the queueing system.
+						seemlessly in real-time. Cider Remote was fueled with my 
+						<a href="https://d.lumaa.fr/remotegit">contributions</a>.<br><br>Lumaa is now
+						the Remote Team Lead for Cider Remote since May 2025, with full creative control of the app.
 					</p>
 				</div>
 			</div>
-			<a href="https://d.lumaa.fr/bnlhga" class="br">
+			<a href="https://apps.lumaa.fr/app/remote" class="br">
 				<span class="label">Learn more</span>
 			</a>
 		</div>
-		<div class="cta sectionized bubble">
-			<div class="leftright fill directed" id="projects">
-				<img
-					src="../assets/projects/bubble_heroicon.png"
-					alt="Bubble app icon"
-				/>
-				<div class="text">
-					<p class="title">Bubble</p>
-					<p>
-						Bubble is a <a href="https://joinmastodon.org/">Mastodon</a> client
-						that is simple and easy-to-use.<br /><br />It has all the primary
-						Mastodon features for free, and includes Bubble+ for additional
-						features like a Content Filter, Account Metrics, and much more...
-					</p>
-				</div>
-			</div>
-			<a href="https://lumaa.fr/bubble" class="br">
-				<span class="label">Learn more</span>
-			</a>
-		</div>
-
 		<div class="cta sectionized app">
 			<div class="rightleft fill directed" id="projects">
-				<img src="../assets/projects/fraca_herodark.png" alt="Fraca app icon" />
+				<img src="../assets/projects/fraca_herodark.png" alt="Fraca app icon" draggable="false" />
 				<div class="text">
 					<p class="title">Fraca</p>
-					<p>
-						Fraca is a handy and simple app available on all Apple devices, made
+					<p>Fraca is a handy and simple app available on all Apple devices, made
 						for Canadians going to France or French people going to Canada.<br /><br />It
 						includes an exchange rate from Euro to Canadian dollars, a tax
 						calculator, and all imperial - metrics conversions.
@@ -80,16 +51,36 @@
 				<span class="label">Learn more</span>
 			</a>
 		</div>
+		<div class="cta sectionized bubble">
+			<div class="leftright fill directed" id="projects">
+				<img
+					src="../assets/projects/bubble_heroicon.png"
+					alt="Bubble app icon"
+					draggable="false"
+				/>
+				<div class="text">
+					<p class="title">Bubble</p>
+					<p>Bubble is a <a href="https://joinmastodon.org/">Mastodon</a> client
+						that is simple and easy-to-use.<br /><br />It has all the primary
+						Mastodon features for free, and includes Bubble+ for additional
+						features like a Content Filter, Account Metrics, and much more...
+					</p>
+				</div>
+			</div>
+			<a href="https://lumaa.fr/bubble" class="br">
+				<span class="label">Learn more</span>
+			</a>
+		</div>
 		<div class="cta sectionized bkrm">
 			<div class="leftright fill directed" id="projects">
 				<img
 					src="../assets/projects/bkrm_autotransp.png"
 					alt="BackroomsMod app icon"
+					draggable="false"
 				/>
 				<div class="text">
 					<p class="title">Backrooms</p>
-					<p>
-						Find yourself the #1 Backrooms mod on Modrinth, adding the legendary
+					<p>Find yourself the oldest and well-known Backrooms mod on Modrinth, adding the legendary
 						world of The Backrooms in Minecraft.<br /><br />Don't get too crazy
 						from the Level 0's buzzing lights, and the entity's hums behind the
 						wall next to you...
@@ -100,23 +91,6 @@
 				<span class="label">Modrinth</span>
 			</a>
 		</div>
-		<div class="cta sectionized app">
-			<div class="rightleft fill directed">
-				<img src="../assets/projects/tictac_transp.png" alt="TicTac icon" />
-				<div class="text">
-					<p class="title">TicTac</p>
-					<p>
-						TicTac is the very first app I published on the App Store in October
-						2023, making reminders, countdowns and tasks an easy thing to
-						utilize on your iPhone or iPad.<br /><br />TicTac v2 is a W.I.P.
-						update changing every aspect of the app, coming later in 2025.
-					</p>
-				</div>
-			</div>
-			<a href="https://apps.apple.com/us/app/tictac/id6468402716" class="br">
-				<span class="label">View in the App Store</span>
-			</a>
-		</div>
 		<div class="sep"></div>
 		<span style="gap: 1em" class="flex">
 			<p class="title">Follow me:</p>
@@ -124,6 +98,12 @@
 				<div class="labels">
 					<span class="label">Apple Apps</span>
 					<span class="sublabel">apps.lumaa.fr</span>
+				</div>
+			</router-link>
+			<router-link to="/github" class="br">
+				<div class="labels">
+					<span class="label">GitHub</span>
+					<span class="sublabel">lumaa_dev</span>
 				</div>
 			</router-link>
 			<router-link to="/mastodon" class="br">
@@ -138,28 +118,16 @@
 					<span class="sublabel">@lumaa.fr</span>
 				</div>
 			</router-link>
-			<router-link to="/lemmy" class="br">
+			<router-link to="/twitter" class="br">
 				<div class="labels">
-					<span class="label">Lemmy</span>
-					<span class="sublabel">@Lumaa@lemmy.world</span>
-				</div>
-			</router-link>
-			<router-link to="/github" class="br">
-				<div class="labels">
-					<span class="label">GitHub</span>
-					<span class="sublabel">lumaa_dev</span>
+					<span class="label">Twitter</span>
+					<span class="sublabel">@lumaa_dev</span>
 				</div>
 			</router-link>
 			<router-link to="/youtube" class="br">
 				<div class="labels">
 					<span class="label">YouTube</span>
 					<span class="sublabel">@Lumaa_PRO</span>
-				</div>
-			</router-link>
-			<router-link to="/discord" class="br">
-				<div class="labels">
-					<span class="label">Discord 🇫🇷</span>
-					<span class="sublabel">Pour Twitch</span>
 				</div>
 			</router-link>
 			<router-link to="/substack" class="br">
@@ -215,7 +183,7 @@ export default {
 		};
 	},
 	beforeMount() {
-		this.getLastMastodon();
+		// this.getLastMastodon();
 	},
 	methods: {
 		async getLastMastodon() {

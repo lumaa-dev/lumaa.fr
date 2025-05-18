@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import { nextTick } from "vue"
+
 import HomeView from '../views/HomeView.vue'
 import AboutView from '@/views/AboutView.vue';
 import WrappedView from '@/views/WrappedView.vue';
@@ -87,6 +88,11 @@ const customRedirections = [
   {
     path: "/lemmy",
     redirect: redirect("https://lemmy.world/u/Lumaa")
+  },
+  {
+    path: '/twitter',
+    redirect: redirect("https://twitter.com/lumaa_dev"),
+    alias: '/x'
   },
   {
     path: "/github",
