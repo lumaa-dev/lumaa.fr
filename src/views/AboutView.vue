@@ -98,8 +98,7 @@
                     <div class="title">Music</div>
                     Of course, French YouTuber, musician and singer <a href="https://feldup.bandcamp.com/">Feldup</a>! Mostly his latest album <a href="https://bfan.link/stared-at-from-a-distance">Stared at from a Distance</a>. It's a very cool rock album about the musician's deepest trauma, go listen to it.<br/><br/>Other stuff I listen to is <a href="https://youtu.be/GnF4fvJZjQc">James Marriott</a>, a very talented artist that has been growing a lot in the past few years... And OF COURSE: <a href="https://www.radiohead.com/library">Radiohead</a>.
                 </div>
-                <iframe style="border: 0; width: 350px; height: 470px;" src="https://bandcamp.com/EmbeddedPlayer/album=959054129/size=large/bgcol=333333/linkcol=0f91ff/tracklist=false/transparent=true/" seamless><a href="https://feldup.bandcamp.com/album/stared-at-from-a-distance-2">Stared at from a Distance by Feldup</a></iframe>
-            </div>
+<iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="170" style="width:100%;max-width:660px;overflow:hidden;border-radius:10px;padding:0 15px" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/us/song/plasticine/1809223056?theme=dark"></iframe>            </div>
             <div class="sectionized rightleft fill directed">
                 <div class="text">
                     <div class="title">Vinyls</div>
