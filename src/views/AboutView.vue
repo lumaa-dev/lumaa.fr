@@ -107,7 +107,7 @@
                 <img src="../assets/portfolio/vinyl.png" alt="Stared at from a Distance vinyl" draggable="false" />
             </div>
         </span>
-        <router-link to="/" class="br space">
+        <router-link to="/#" class="br space">
             <span class="label">Return home</span>
         </router-link>
     </span>

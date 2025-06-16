@@ -47,7 +47,7 @@
 		<router-view />
 	</div>
 	<div class="footer">
-		<p>/* <router-link to="/copyright">©</router-link> Lumaa 2022—{{ new Date().getFullYear() }} */</p>
+		<p>/* <router-link to="/copyright#">©</router-link> Lumaa 2022—{{ new Date().getFullYear() }} */</p>
 	</div>
 </template>
 
