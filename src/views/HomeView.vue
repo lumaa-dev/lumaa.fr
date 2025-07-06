@@ -10,7 +10,7 @@
 				/>
 				<div class="text">
 					<p class="title">Lumaa</p>
-					<p>Remote Team Lead @ <a href="https://cider.sh/">Cider Collective</a> since May 2025<br /><br />Indie developer since forever, a lot of active projects, most of which are open-source.</p>
+					<p>Remote Team Lead @ <a href="https://cider.sh/">Cider Collective</a> since May 2025<br /><br />Indie developer since 2021, a lot of active projects, most of which are open-source.</p>
 				</div>
 			</div>
 			<router-link to="/about" class="br">
