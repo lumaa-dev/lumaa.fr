@@ -37,10 +37,10 @@
 					<span class="sublabel">© Lumaa 2024</span>
 				</div>
 			</a>
-			<a href="https://apps.lumaa.fr/app/recordlink" class="br">
+			<a href="https://files.lumaa.fr/" class="br">
 				<div class="labels">
-					<span class="label">Record Link</span>
-					<span class="sublabel">© Lumaa 2024-2025</span>
+					<span class="label">Files</span>
+					<span class="sublabel">© Lumaa 2025</span>
 				</div>
 			</a>
             <a href="https://apps.lumaa.fr/legal/copyrights?utm_source=lumaa" class="br">
