@@ -124,13 +124,12 @@
 		text-decoration: none !important;
 		text-align: left;
 		cursor: pointer;
-		transition: 0.25s all;
+		transition: background .25s, filter .25s, color .25s
 	}
 
 	a.br > .labels,
 	button.br > .labels {
 		margin: 0 1em;
-		max-width: 250px;
 		text-align: left;
 	}
 
