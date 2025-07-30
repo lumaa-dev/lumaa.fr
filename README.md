@@ -1,75 +1,10 @@
-# Nuxt Minimal Starter
+# lumaa.fr
+This is the repo of my website [lumaa.fr](https://lumaa.fr/)
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+# Fonts
+- [Moderniz](https://www.dafont.com/moderniz.font) by [Eko Bimantara](https://www.myfonts.com/collections/eko-bimantara-foundry)
+- [Salma Alfasans](https://www.dafont.com/salma-alfasans.font) by [Alifinart Studios](behance.net/alifinart)
+- [JetBrains Mono](https://www.jetbrains.com/lp/mono/) by [JetBrains s.r.o.](https://www.jetbrains.com)
 
-## Setup
-
-Make sure to install dependencies:
-
-```bash
-# npm
-npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+# Copyright
+© Lumaa 2022-2025
