@@ -10,24 +10,35 @@
 				/>
 				<div class="text">
 					<p class="title">Lumaa</p>
-					<p>Remote Team Lead @ <a href="https://cider.sh/">Cider Collective</a> since May 2025<br /><br />Indie developer since 2021, a lot of active projects, most of which are open-source.</p>
+					<p>
+						Remote Team Lead @
+						<a href="https://cider.sh/">Cider Collective</a> since May 2025<br /><br />Indie
+						developer since 2021, a lot of active projects, most of which are
+						open-source.
+					</p>
 				</div>
 			</div>
 			<router-link to="/about" class="br">
-				<span class="label">About Me</span>	
+				<span class="label">About Me</span>
 			</router-link>
 		</div>
 		<div class="cta sectionized cider">
 			<div class="rightleft fill directed" id="projects">
-				<img src="../assets/cider-icon.png" alt="Cider icon" draggable="false"/>
+				<img
+					src="../assets/cider-icon.png"
+					alt="Cider icon"
+					draggable="false"
+				/>
 				<div class="text">
 					<p class="title">Cider Remote</p>
 					<p>
-						<a href="https://apps.lumaa.fr/app/remote">Cider Remote</a> is a native iOS
-						app used to control a <a href="https://cider.sh/">Cider</a> instance
-						seemlessly in real-time. Cider Remote was fueled with my 
-						<a href="https://d.lumaa.fr/remotegit">contributions</a>.<br><br>Lumaa is now
-						the Remote Team Lead for Cider Remote since May 2025, with full creative control of the app.
+						<a href="https://apps.lumaa.fr/app/remote">Cider Remote</a> is a
+						native iOS app used to control a
+						<a href="https://cider.sh/">Cider</a> instance seemlessly in
+						real-time. Cider Remote was fueled with my
+						<a href="https://d.lumaa.fr/remotegit">contributions</a
+						>.<br /><br />Lumaa is now the Remote Team Lead for Cider Remote
+						since May 2025, with full creative control of the app.
 					</p>
 				</div>
 			</div>
@@ -37,17 +48,21 @@
 		</div>
 		<div class="cta sectionized app">
 			<div class="rightleft fill directed" id="projects">
-				<img src="../assets/projects/fraca_herodark.png" alt="Fraca app icon" draggable="false" />
+				<img
+					src="../assets/projects/file_upload.svg"
+					alt="Files icon"
+					draggable="false"
+				/>
 				<div class="text">
-					<p class="title">Fraca</p>
-					<p>Fraca is a handy and simple app available on all Apple devices, made
-						for Canadians going to France or French people going to Canada.<br /><br />It
-						includes an exchange rate from Euro to Canadian dollars, a tax
-						calculator, and all imperial - metrics conversions.
+					<p class="title">Files</p>
+					<p>
+						Files is the simplest public file hosting service you'll ever
+						see.<br /><br />Upload your file, and see it appear instantly right
+						after. All this, for free, and open-source. Built using Nuxt.js
 					</p>
 				</div>
 			</div>
-			<a href="https://apps.lumaa.fr/app/fraca" class="br">
+			<a href="https://github.com/lumaa-dev/Files" class="br">
 				<span class="label">Learn more</span>
 			</a>
 		</div>
@@ -60,7 +75,8 @@
 				/>
 				<div class="text">
 					<p class="title">Bubble</p>
-					<p>Bubble is a <a href="https://joinmastodon.org/">Mastodon</a> client
+					<p>
+						Bubble is a <a href="https://joinmastodon.org/">Mastodon</a> client
 						that is simple and easy-to-use.<br /><br />It has all the primary
 						Mastodon features for free, and includes Bubble+ for additional
 						features like a Content Filter, Account Metrics, and much more...
@@ -80,10 +96,11 @@
 				/>
 				<div class="text">
 					<p class="title">Backrooms</p>
-					<p>Find yourself the oldest and well-known Backrooms mod on Modrinth, adding the legendary
-						world of The Backrooms in Minecraft.<br /><br />Don't get too crazy
-						from the Level 0's buzzing lights, and the entity's hums behind the
-						wall next to you...
+					<p>
+						Find yourself the oldest and well-known Backrooms mod on Modrinth,
+						adding the legendary world of The Backrooms in Minecraft.<br /><br />Don't
+						get too crazy from the Level 0's buzzing lights, and the entity's
+						hums behind the wall next to you...
 					</p>
 				</div>
 			</div>
@@ -187,9 +204,13 @@ export default {
 	},
 	methods: {
 		async getLastMastodon() {
-			const response = await (await fetch("https://techhub.social/api/v1/accounts/109638854597275635/statuses?exclude_replies=true")).json(json => json);
+			const response = await (
+				await fetch(
+					"https://techhub.social/api/v1/accounts/109638854597275635/statuses?exclude_replies=true"
+				)
+			).json((json) => json);
 			this.lastMastodonId = response[0].id;
-		}
+		},
 	},
 };
 </script>
