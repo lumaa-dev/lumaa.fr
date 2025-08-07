@@ -16,12 +16,6 @@ jobs:
       - name: Build the project
         run: |
           cd ${{ github.workspace }}
-          FILE="./app/utils/constants.ts"
-          COMMIT_HASH=$(git log --pretty=format:'%h' -n 1)
-
-          sed -i "s/export const APP_COMMIT = \"unknown\"/export const APP_COMMIT = \"$COMMIT_HASH\"/" "$FILE"
-          echo "✅ Commit hash implemented to $FILE"
-
           npm run build
       - name: Upload .output folder
         uses: actions/upload-artifact@v4
