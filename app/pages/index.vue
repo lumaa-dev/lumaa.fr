@@ -17,9 +17,9 @@
 					</p>
 				</div>
 			</div>
-			<router-link to="/nathan" class="br">
+			<a href="https://nathan.lumaa.fr/" class="br">
 				<span class="label">About Me</span>
-			</router-link>
+			</a>
 		</div>
 		<div class="cta sectionized cider">
 			<div class="rightleft fill directed" id="projects">
