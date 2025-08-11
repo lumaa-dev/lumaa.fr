@@ -123,7 +123,7 @@
 	a.br::after,
 	button.br::after {
 		content: "";
-		background-image: url("./assets/lumaa/uni_play_white.svg");
+		background-image: url("/assets/lumaa/uni_play_white.svg");
 		background-size: 33px;
 		aspect-ratio: 10 / 11.33;
 		display: block;
