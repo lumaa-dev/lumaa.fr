@@ -266,6 +266,10 @@ span.m {
 	border-bottom: 0.5px solid #ffffff6d;
 }
 
+.sectionized .text > p {
+	margin: 0;
+}
+
 .cta {
 	display: flex;
 	flex-direction: column;
