@@ -2,41 +2,6 @@
 	import ErrorModalView from "@/components/ErrorModalView.vue";
 
 	export default {
-		data() {
-			return {
-				links: [
-					{ url: "/", name: "pages.home" },
-					{ url: "/apps", name: "pages.apps" },
-				],
-				lang: "",
-				langs: [
-					{ id: "en", name: "languages.en" },
-					{ id: "fr", name: "languages.fr" },
-				],
-			};
-		},
-		methods: {
-			changeLang(lang) {
-				this.lang = lang;
-				this.$i18n.locale = lang;
-				this.$store.commit("setLang", lang);
-				localStorage.setItem("lang", lang);
-			},
-			loadLang() {
-				setTimeout(() => {
-					let lang = this.urlLang() || localStorage.getItem("lang") || "en";
-					console.log("sel lang " + lang);
-					this.lang = lang;
-					this.$i18n.locale = lang;
-				}, 100);
-			},
-			urlLang() {
-				let l =
-					this.$route.query.lang == undefined ? "" : this.$route.query.lang;
-				console.log(this.$route.query.lang);
-				return l == "fr" || l == "en" ? l : null;
-			},
-		},
 		components: { ErrorModalView },
 	};
 </script>
