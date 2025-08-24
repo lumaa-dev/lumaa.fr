@@ -2,7 +2,6 @@ import { createRouter, createWebHistory } from 'vue-router'
 import { nextTick } from "vue"
 
 import HomeView from '../views/HomeView.vue'
-import AboutView from '@/views/AboutView.vue';
 import WrappedView from '@/views/WrappedView.vue';
 import CopyrightView from '@/views/CopyrightView.vue';
 import RedirectView from '@/views/RedirectView.vue';
@@ -24,14 +23,6 @@ const routes = [
       title: "Redirecting..."
     },
     component: RedirectView
-  },
-  {
-    path: '/about',
-    name: "about",
-    meta: {
-      title: "About Lumaa"
-    },
-    component: AboutView
   },
   {
     path: "/wrapped",
@@ -126,6 +117,10 @@ const customRedirections = [
   {
     path: "/discord",
     redirect: redirect("https://discord.gg/PdsbEddYbc")
+  },
+  {
+    path: "/about",
+    redirect: redirect("https://nathan.lumaa.fr/")
   }
 ]
 
