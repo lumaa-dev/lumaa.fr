@@ -1,0 +1,40 @@
+name: Build Vue.js
+on: [push]
+
+jobs:
+  build-vuejs:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '20'
+      - name: Install dependencies & Build project
+        run: npm install && npm run build
+      - name: Upload dist folder
+        uses: actions/upload-artifact@v4
+        with:
+          name: nuxt-output
+          path: ${{ github.workspace }}/dist
+          if-no-files-found: error
+          include-hidden-files: true
+  package:
+    needs: build-vuejs
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download .output from nuxt-output
+        uses: actions/download-artifact@v4
+        with:
+          name: nuxt-output
+          path: .output
+      - name: Delete nuxt-output
+        uses: geekyeggo/delete-artifact@v5
+        with:
+          name: nuxt-output
+      - name: Upload zip
+        uses: actions/upload-artifact@v4
+        with:
+          name: lumaa_fr
+          path: dist/
