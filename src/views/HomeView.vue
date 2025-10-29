@@ -6,12 +6,11 @@
 					src="../assets/hero/hero_wwdc24.jpg"
 					alt="Lumaa icon"
 					class="brand"
-					draggable="false"
-				/>
+					draggable="false" />
 				<div class="text">
 					<p class="title">Lumaa</p>
-					<p>
-						Remote Team Lead @
+					<p
+						>Remote Team Lead @
 						<a href="https://cider.sh/">Cider Collective</a> since May 2025<br /><br />Indie
 						developer since 2021, a lot of active projects, most of which are
 						open-source.
@@ -27,8 +26,7 @@
 				<img
 					src="../assets/cider-icon.png"
 					alt="Cider icon"
-					draggable="false"
-				/>
+					draggable="false" />
 				<div class="text">
 					<p class="title">Cider Remote</p>
 					<p>
@@ -37,8 +35,8 @@
 						<a href="https://cider.sh/">Cider</a> instance seemlessly in
 						real-time. Cider Remote was fueled with my
 						<a href="https://d.lumaa.fr/remotegit">contributions</a
-						>.<br /><br />Lumaa is now the Remote Team Lead for Cider Remote
-						since May 2025, with full creative control of the app.
+						>.<br /><br />Lumaa is the Remote Team Lead for Cider Remote since
+						May 2025, with full creative control of the app.
 					</p>
 				</div>
 			</div>
@@ -51,12 +49,11 @@
 				<img
 					src="../assets/projects/file_upload.svg"
 					alt="Files icon"
-					draggable="false"
-				/>
+					draggable="false" />
 				<div class="text">
 					<p class="title">Files</p>
-					<p>
-						Files is the simplest public file hosting service you'll ever
+					<p
+						>Files is the simplest public file hosting service you'll ever
 						see.<br /><br />Upload your file, and see it appear instantly right
 						after. All this, for free, and open-source. Built using Nuxt.js
 					</p>
@@ -71,19 +68,18 @@
 				<img
 					src="../assets/projects/bubble_heroicon.png"
 					alt="Bubble app icon"
-					draggable="false"
-				/>
+					draggable="false" />
 				<div class="text">
 					<p class="title">Bubble</p>
-					<p>
-						Bubble is a <a href="https://joinmastodon.org/">Mastodon</a> client
+					<p
+						>Bubble is a <a href="https://joinmastodon.org/">Mastodon</a> client
 						that is simple and easy-to-use.<br /><br />It has all the primary
 						Mastodon features for free, and includes Bubble+ for additional
 						features like a Content Filter, Account Metrics, and much more...
 					</p>
 				</div>
 			</div>
-			<a href="https://lumaa.fr/bubble" class="br">
+			<a href="https://apps.lumaa.fr/app/bubble" class="br">
 				<span class="label">Learn more</span>
 			</a>
 		</div>
@@ -92,12 +88,11 @@
 				<img
 					src="../assets/projects/bkrm_autotransp.png"
 					alt="BackroomsMod app icon"
-					draggable="false"
-				/>
+					draggable="false" />
 				<div class="text">
 					<p class="title">Backrooms</p>
-					<p>
-						Find yourself the oldest and well-known Backrooms mod on Modrinth,
+					<p
+						>Find yourself the oldest and well-known Backrooms mod on Modrinth,
 						adding the legendary world of The Backrooms in Minecraft.<br /><br />Don't
 						get too crazy from the Level 0's buzzing lights, and the entity's
 						hums behind the wall next to you...
@@ -123,7 +118,13 @@
 					<span class="sublabel">lumaa_dev</span>
 				</div>
 			</router-link>
-			<router-link to="/mastodon" class="br">
+			<router-link to="/twitter" class="br">
+				<div class="labels">
+					<span class="label">Twitter</span>
+					<span class="sublabel">@lumaa_dev</span>
+				</div>
+			</router-link>
+			<!-- <router-link to="/mastodon" class="br">
 				<div class="labels">
 					<span class="label">Mastodon</span>
 					<span class="sublabel">@lumaa@techhub.social</span>
@@ -134,13 +135,7 @@
 					<span class="label">Bluesky</span>
 					<span class="sublabel">@lumaa.fr</span>
 				</div>
-			</router-link>
-			<router-link to="/twitter" class="br">
-				<div class="labels">
-					<span class="label">Twitter</span>
-					<span class="sublabel">@lumaa_dev</span>
-				</div>
-			</router-link>
+			</router-link> -->
 			<router-link to="/youtube" class="br">
 				<div class="labels">
 					<span class="label">YouTube</span>
