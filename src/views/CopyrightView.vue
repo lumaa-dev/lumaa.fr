@@ -5,8 +5,7 @@
 			src="../assets/hero/icon_white.svg"
 			alt="Lumaa icon"
 			class="worker"
-			draggable="false"
-		/>
+			draggable="false" />
 		<p class="special title">© Lumaa 2022-{{ new Date().getFullYear() }}</p>
 		<div class="sep"></div>
 		<span style="gap: 1em" class="flex">
@@ -18,12 +17,14 @@
 			<router-link to="/vfast" class="br">
 				<div class="labels">
 					<span class="label">V-Fast</span>
-					<span class="sublabel">© V-Fast 2023-{{ new Date().getFullYear() }}</span>
+					<span class="sublabel"
+						>© V-Fast 2023-{{ new Date().getFullYear() }}</span
+					>
 				</div>
 			</router-link>
 		</span>
 		<div class="sep"></div>
-        <span style="gap: 1em" class="flex">
+		<span style="gap: 1em" class="flex">
 			<p class="title">Projects:</p>
 			<router-link to="/vfast" class="br">
 				<div class="labels">
@@ -31,7 +32,7 @@
 					<span class="sublabel">© Lumaa 2024</span>
 				</div>
 			</router-link>
-            <a href="https://github.com/lumaa-dev/DesirePath" class="br">
+			<a href="https://github.com/lumaa-dev/DesirePath" class="br">
 				<div class="labels">
 					<span class="label">Desire Path</span>
 					<span class="sublabel">© Lumaa 2024</span>
@@ -43,7 +44,15 @@
 					<span class="sublabel">© Lumaa 2025</span>
 				</div>
 			</a>
-            <a href="https://apps.lumaa.fr/legal/copyrights?utm_source=lumaa" class="br">
+			<a href="https://nathan.lumaa.fr/?utm_source=lumaa" class="br">
+				<div class="labels">
+					<span class="label">Nathan</span>
+					<span class="sublabel">© Nathan 2025</span>
+				</div>
+			</a>
+			<a
+				href="https://apps.lumaa.fr/legal/copyrights?utm_source=lumaa"
+				class="br">
 				<div class="labels">
 					<span class="label">App Copyrights</span>
 				</div>
