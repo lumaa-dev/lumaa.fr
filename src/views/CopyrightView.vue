@@ -47,7 +47,7 @@
 			<a href="https://nathan.lumaa.fr/?utm_source=lumaa" class="br">
 				<div class="labels">
 					<span class="label">Nathan</span>
-					<span class="sublabel">© Nathan 2025</span>
+					<span class="sublabel">© Nathan 2025-{{ new Date().getFullYear() }}</span>
 				</div>
 			</a>
 			<a
