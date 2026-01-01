@@ -6,6 +6,10 @@ import CopyrightView from "@/views/CopyrightView.vue";
 import RedirectView from "@/views/RedirectView.vue";
 import NotFoundView from "@/components/NotFound.vue";
 
+// experiments
+import CountdownObsView from "@/views/experiments/CountdownObsView.vue";
+
+
 const routes = [
 	{
 		path: "/",
@@ -32,13 +36,18 @@ const routes = [
 		component: CopyrightView,
 	},
 	{
+		path: "/exp/countdown",
+		name: "countdown",
+		component: CountdownObsView,
+	},
+	{
 		path: "/:pathMatch(.*)",
 		name: "404",
 		meta: {
 			title: "Lumaa - 404",
 		},
 		component: NotFoundView,
-	},
+	}
 ];
 
 const redirect = (/**@type {string}*/ url) => {
