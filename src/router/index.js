@@ -66,7 +66,7 @@ const customRedirections = [
 	},
 	{
 		path: "/youtube",
-		redirect: redirect("https://youtube.com/@Lumaa_PRO?sub_confirmation=1"),
+		redirect: redirect("https://youtube.com/@lumaa_dev?sub_confirmation=1"),
 	},
 	{
 		path: "/instagram",

@@ -139,7 +139,7 @@
 			<router-link to="/youtube" class="br">
 				<div class="labels">
 					<span class="label">YouTube</span>
-					<span class="sublabel">@Lumaa_PRO</span>
+					<span class="sublabel">@lumaa_dev</span>
 				</div>
 			</router-link>
 			<router-link to="/substack" class="br">
