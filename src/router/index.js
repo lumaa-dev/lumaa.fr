@@ -57,10 +57,6 @@ const redirect = (/**@type {string}*/ url) => {
 
 const customRedirections = [
 	{
-		path: "/support",
-		redirect: redirect("https://discord.gg/Rqpn3C7yR5"),
-	},
-	{
 		path: "/twitch",
 		redirect: redirect("https://twitch.tv/lumaa_dev"),
 	},
@@ -98,11 +94,6 @@ const customRedirections = [
 		redirect: redirect("https://bsky.app/profile/lumaa.fr"),
 	},
 	{
-		path: "/v-fast",
-		alias: "/vfast",
-		redirect: redirect("https://github.com/v-fast"),
-	},
-	{
 		path: "/modrinth",
 		redirect: redirect("https://modrinth.com/user/Lumaa"),
 	},
@@ -116,7 +107,7 @@ const customRedirections = [
 	},
 	{
 		path: "/discord",
-		redirect: redirect("https://discord.gg/PdsbEddYbc"),
+		redirect: redirect("https://d.lumaa.fr/discord"),
 	},
 	{
 		path: "/about",
