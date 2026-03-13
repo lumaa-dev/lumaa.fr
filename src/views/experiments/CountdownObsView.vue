@@ -57,11 +57,21 @@ export default {
         this.targetTimestamp = null;
       }
     },
+    perfectTime() {
+      const nowSeconds = Math.floor(Date.now() / 1000);
+      const diffMilli = Date.now() - nowSeconds;
+
+      return diffMilli
+    }
   },
   created() {
     this.loadTargetFromQuery();
-    this.updateCountdown();
-    setInterval(this.updateCountdown, 1000);
+
+    let diff = this.perfectTime();
+    setTimeout(() => {
+      this.updateCountdown();
+      setInterval(this.updateCountdown, 1000);
+    }, diff);
   },
 };
 </script>
