@@ -256,7 +256,7 @@ span.m {
 }
 
 .directed {
-	width: 100vw;
+	max-width: 100vw;
 	gap: 10vw;
 }
 
@@ -281,7 +281,10 @@ span.m {
 }
 
 .sectionized {
-	border-bottom: 0.5px solid #ffffff6d;
+	border: 0.5px solid #ffffff1d;
+	width: 95vw;
+	border-radius: 35px;
+	margin: 1em 0;
 }
 
 .cta {
@@ -319,6 +322,14 @@ span.m {
 @media screen and (max-width: 850px) {
 	.fill:not(.cta > .fill) {
 		height: 90vh;
+	}
+
+	.sectionized {
+		border: none;
+		border-bottom: 0.5px solid #ffffff6d !important;
+		width: 100vw;
+		border-radius: 0;
+		margin: 0;
 	}
 
 	.cta {
