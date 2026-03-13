@@ -10,16 +10,32 @@
 				<div class="text">
 					<p class="title">Lumaa</p>
 					<p
-						>Remote Team Lead @
-						<a href="https://cider.sh/">Cider Collective</a> since May 2025<br /><br />Indie
-						developer since 2021, a lot of active projects, most of which are
-						open-source.
+						><b>Founder</b> & Developer -
+						<a href="https://apps.lumaa.fr/app/amber">Amber App</a><br /><br />Indie developer since 2021, a lot of active
+						projects, most of which are open-source.
 					</p>
 				</div>
 			</div>
 			<router-link to="/about" class="br">
 				<span class="label">About Me</span>
 			</router-link>
+		</div>
+		<div class="cta sectionized amber">
+			<div class="leftright fill directed" id="projects">
+				<img
+					src="https://apps.lumaa.fr/assets/images/amber/Glass_AmberIcon.png"
+					alt="Amber App icon"
+					draggable="false" />
+				<div class="text">
+					<p class="title">Amber</p>
+					<p
+						>Amber is the upcoming Apple Music revolution. Built in SwiftUI, using MusicKit, by true music passionates.
+					</p>
+				</div>
+			</div>
+			<a href="https://apps.lumaa.fr/app/amber" class="br">
+				<span class="label">Learn more</span>
+			</a>
 		</div>
 		<div class="cta sectionized cider">
 			<div class="rightleft fill directed" id="projects">
@@ -41,25 +57,6 @@
 				</div>
 			</div>
 			<a href="https://apps.lumaa.fr/app/remote" class="br">
-				<span class="label">Learn more</span>
-			</a>
-		</div>
-		<div class="cta sectionized app">
-			<div class="rightleft fill directed" id="projects">
-				<img
-					src="../assets/projects/file_upload.svg"
-					alt="Files icon"
-					draggable="false" />
-				<div class="text">
-					<p class="title">Files</p>
-					<p
-						>Files is the simplest public file hosting service you'll ever
-						see.<br /><br />Upload your file, and see it appear instantly right
-						after. All this, for free, and open-source. Built using Nuxt.js
-					</p>
-				</div>
-			</div>
-			<a href="https://github.com/lumaa-dev/Files" class="br">
 				<span class="label">Learn more</span>
 			</a>
 		</div>
@@ -152,6 +149,18 @@
 		<div class="sep"></div>
 		<span style="gap: 1em" class="flex">
 			<p class="title">Older stuff:</p>
+			<a href="https://apps.lumaa.fr/app/remote" class="br">
+				<div class="labels">
+					<span class="label">Cider Remote App</span>
+					<span class="sublabel">2024-2025</span>
+				</div>
+			</a>
+			<a href="https://apps.lumaa.fr/app/tictac" class="br">
+				<div class="labels">
+					<span class="label">TicTac App</span>
+					<span class="sublabel">2024</span>
+				</div>
+			</a>
 			<a href="https://github.com/lumaa-dev/NumMemory" class="br">
 				<div class="labels">
 					<span class="label">NumMemory App</span>
@@ -201,7 +210,7 @@ export default {
 		async getLastMastodon() {
 			const response = await (
 				await fetch(
-					"https://techhub.social/api/v1/accounts/109638854597275635/statuses?exclude_replies=true"
+					"https://techhub.social/api/v1/accounts/109638854597275635/statuses?exclude_replies=true",
 				)
 			).json((json) => json);
 			this.lastMastodonId = response[0].id;
@@ -280,6 +289,11 @@ span.m {
 	flex-direction: column;
 	align-items: center;
 	padding-bottom: calc(24vh - 14vh);
+}
+
+.amber {
+	background: radial-gradient( circle at 10% 20%, #ff9c0b 0px, #fca41f 70px, #f9aa33 150px, #f8ae3f 500px );
+	text-shadow: 0px 0px 20px #00000030;
 }
 
 .cider {
